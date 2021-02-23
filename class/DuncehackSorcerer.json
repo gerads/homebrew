@@ -1,0 +1,2731 @@
+{
+	"$schema": "../schema.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "duncehack:Sorcerer",
+				"full": "Duncehack Sorcerer Class",
+				"abbreviation": "DH Sorcerer",
+				"authors": [
+					"Duncehack"
+				],
+				"convertedBy": [
+					"gerads"
+				],
+				"url": "https://homebrewery.naturalcrit.com/share/SkZoKK65N",
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1566441761
+	},
+	"class": [
+		{
+			"name": "Sorcerer",
+			"source": "Duncehack",
+			"hd": {
+				"number": 1,
+				"faces": 6
+			},
+			"proficiency": [
+				"con",
+				"cha"
+			],
+			"spellcastingAbility": "cha",
+			"casterProgression": "full",
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"Sorcery Points"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							13
+						],
+						[
+							14
+						],
+						[
+							15
+						],
+						[
+							16
+						],
+						[
+							17
+						],
+						[
+							18
+						],
+						[
+							19
+						],
+						[
+							20
+						]
+					]
+				},
+				{
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|class=Sorcerer}",
+						"{@filter Spells Known|spells|class=Sorcerer}"
+					],
+					"rows": [
+						[
+							4,
+							4
+						],
+						[
+							4,
+							5
+						],
+						[
+							4,
+							6
+						],
+						[
+							5,
+							7
+						],
+						[
+							5,
+							8
+						],
+						[
+							5,
+							9
+						],
+						[
+							5,
+							10
+						],
+						[
+							5,
+							11
+						],
+						[
+							5,
+							12
+						],
+						[
+							6,
+							13
+						],
+						[
+							6,
+							14
+						],
+						[
+							6,
+							15
+						],
+						[
+							6,
+							16
+						],
+						[
+							6,
+							17
+						],
+						[
+							6,
+							18
+						],
+						[
+							6,
+							19
+						],
+						[
+							6,
+							20
+						],
+						[
+							6,
+							21
+						],
+						[
+							6,
+							22
+						],
+						[
+							6,
+							23
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Sorcerer}",
+						"{@filter 2nd|spells|level=2|class=Sorcerer}",
+						"{@filter 3rd|spells|level=3|class=Sorcerer}",
+						"{@filter 4th|spells|level=4|class=Sorcerer}",
+						"{@filter 5th|spells|level=5|class=Sorcerer}",
+						"{@filter 6th|spells|level=6|class=Sorcerer}",
+						"{@filter 7th|spells|level=7|class=Sorcerer}",
+						"{@filter 8th|spells|level=8|class=Sorcerer}",
+						"{@filter 9th|spells|level=9|class=Sorcerer}"
+					],
+					"rows": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"weapons": [
+					"daggers",
+					"darts",
+					"slings",
+					"quarterstaffs",
+					"light crossbows",
+					"one martial weapon of your choice"
+				],
+				"tools": [
+					"any two tool profiencies of your choice"
+				],
+				"skills": {
+					"choose": 2,
+					"from": [
+						"Arcana",
+						"Deception",
+						"Insight",
+						"Intimidation",
+						"Persuasion",
+						"Religion"
+					]
+				}
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+					"(a) a {@item component pouch|phb} or (b) an {@item arcane focus|phb}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+					"(a) {@item dagger|phb|daggers} or (b) {@item dart|phb|10 darts}",
+					"any martial weapon you're proficient in",
+					"any tools of a kind you're proficient in"
+				],
+				"goldAlternative": "{@dice 3d4×10|3d4 × 10|Starting Gold}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"cha": 13
+				}
+			},
+			"classFeatures": [
+				[
+					{
+						"name": "Spellcasting",
+						"entries": [
+							"An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter sorcerer spell list|spells|class=sorcerer}.",
+							{
+								"type": "entries",
+								"name": "Cantrips",
+								"entries": [
+									"At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn an additional sorcerer cantrip of your choice at 4th level and another at 10th level."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Spell Slots",
+								"entries": [
+									"The Sorcerer table shows how many spell slots you have to cast your {@filter sorcerer spells|spells|class=sorcerer} of 1st level and higher. To cast one of these sorcerer spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+									"For example, if you know the 1st-level spell {@spell burning hands} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell burning hands} using either slot."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Spells Known of 1st Level and Higher",
+								"entries": [
+									"You know two 1st-level spells of your choice from the sorcerer spell list.",
+									"You learn an additional sorcerer spell of your choice at each level except 12th, 14th, 16th, 18th, 19th, and 20th. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.",
+									"Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Spellcasting Ability",
+								"entries": [
+									"Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when making an attack roll with one.",
+									{
+										"type": "abilityDc",
+										"name": "Spell",
+										"attributes": [
+											"cha"
+										]
+									},
+									{
+										"type": "abilityAttackMod",
+										"name": "Spell",
+										"attributes": [
+											"cha"
+										]
+									}
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Innate Spellcasting",
+								"entries": [
+									"Your own body counts an arcane focus."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Magical Blood",
+								"entries": [
+									"Your blood can substitute for other materials in a spell. Other spellcasters can utilise this blood in the absence of a focus or a component pouch.",
+									"Each fluid ounce of blood may be substituted for 1 gp worth of material costs. The blood is consumed by this process.",
+									"This cannot replace materials that are consumed by the spell.",
+									"You cannot exceed 100 gp worth of materials in this way.",
+									"You can spend a minute to draw {@dice 1d4} + your Constitution modifier fluid ounces of blood. You do not take damage from this feature as the amount you're drawing is measured in droplets.",
+									"When you use this feature, you cannot bloodlet like this again until you complete a long rest."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Ritual Casting",
+								"entries": [
+									"You can cast any sorcerer spell you know as a ritual if that spell has the ritual tag."
+								]
+							}
+						]
+					},
+					{
+						"name": "Sorcerous Origin",
+						"entries": [
+							"Choose a sorcerous origin, which describes the source of your innate magical power, from the list of available origins",
+							"Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Font of Magic",
+						"entries": [
+							"At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects",
+							{
+								"type": "entries",
+								"name": "Sorcery Points",
+								"entries": [
+									"You have 2 sorcery points, and you gain one additional point every time you level up, to a maximum of 20 at level 20. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Flexible Casting",
+								"entries": [
+									"You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.",
+									{
+										"type": "entries",
+										"name": "Creating Spell Slots",
+										"entries": [
+											"You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The created spell slots vanish at the end of a long rest. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.",
+											{
+												"type": "table",
+												"caption": "Creating Spell Slots",
+												"colLabels": [
+													"Spell Slot Level",
+													"Sorcery Point Cost"
+												],
+												"colStyles": [
+													"col-6 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"1st",
+														"2"
+													],
+													[
+														"2nd",
+														"3"
+													],
+													[
+														"3rd",
+														"5"
+													],
+													[
+														"4th",
+														"6"
+													],
+													[
+														"5th",
+														"7"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Converting a Spell Slot to Sorcery Points",
+										"entries": [
+											"As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				[
+					{
+						"name": "Lesser Metamagic",
+						"entries": [
+							"At 3rd, you have a pool of Lesser Metamagic uses equal to your Charisma modifier (minimum 1).",
+							"You may spend 1 Lesser Metamagic charge to use any Metamagic feature you know on a cantrip, regardless of the Metamagic's sorcery point cost.",
+							"You regain usage of this feature after a short rest."
+						]
+					},
+					{
+						"name": "Metamagic",
+						"entries": [
+							"At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.",
+							"You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.",
+							{
+								"type": "options",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Careful Spell",
+										"entries": [
+											"When you cast a spell that forces other creatures to make a saving throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). A chosen creature automatically succeeds on its saving throw against the spell."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Distant Spell",
+										"entries": [
+											"When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.",
+											"When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Empowered Spell",
+										"entries": [
+											"When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.",
+											"You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Extended Spell",
+										"entries": [
+											"When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Heightened Spell",
+										"entries": [
+											"When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 sorcery points to give one target of the spell disadvantage on its first saving throw made against the spell."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Quickened Spell",
+										"entries": [
+											"When you cast a spell that has a casting time of 1 action, you can spend 2 sorcery points to change the casting time to 1 bonus action for this casting."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Subtle Spell",
+										"entries": [
+											"When you cast a spell, you can spend 1 sorcery point to cast it without any somatic or verbal components."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Twinned Spell",
+										"entries": [
+											"When you cast a spell that doesn't have a range of self and is incapable of targeting more than one creature at the spell's current level, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).",
+											"To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, magic missile and scorching ray aren't eligible, but ray of frost and chromatic orb are."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Sorcerous Origin feature",
+						"entries": [
+							"At 6th level, you gain a feature granted by your Sorcerous Origin."
+						],
+						"gainSubclassFeature": true
+					},
+					{
+						"name": "Sorcerous Restoration",
+						"entries": [
+							"At 6th level, you recover your Charisma modifier (minimum 1) Sorcery Points on a short rest. This cannot exceed your maximum Sorcery Point total."
+						]
+					}
+				],
+				[
+					{
+						"name": "Inborn Power",
+						"entries": [
+							"At 7th level, you start to gain more control over the innate manifestations of your magical bloodline.",
+							"You add your Charisma modifier to Sorcerer cantrip damage rolls."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Metamagic",
+						"entries": [
+							"At 10th level, you learn an additional metamagic option."
+						]
+					},
+					{
+						"name": "Sorcerous Endurance",
+						"entries": [
+							"At 10th level, when you roll initiative, if you have no lesser metamagic charges remaining, you may regain one lesser metamagic charge."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Sorcerous Origin feature",
+						"entries": [
+							"At 14th level, you gain a feature granted by your Sorcerous Origin."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[
+					{
+						"name": "Metamagic",
+						"entries": [
+							"At 17th level, you learn an additional metamagic option."
+						]
+					}
+				],
+				[
+					{
+						"name": "Sorcerous Origin feature",
+						"entries": [
+							"At 18th level, you gain a feature granted by your Sorcerous Origin."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[
+					{
+						"name": "Wellspring of Power",
+						"entries": [
+							"At 20th level, the magic in your veins manifests the limits of its power. Your metamagics become more potent.",
+							"Lesser Metamagic is not improved this way.",
+							{
+								"type": "entries",
+								"name": "Careful Spell",
+								"entries": [
+									"Creatures you protect with this metamagic are now immune to the spell's effects. You can protect any number of creatures this way."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Distant Spell",
+								"entries": [
+									"This metamagic now sets the range to Line of Sight. The target creature must be on the same plane of existence."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Empowered Spell",
+								"entries": [
+									"Change a number of damage dice of the spell up to your Charisma modifier (minimum of one) show the maximum number they can roll."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Extended Spell",
+								"entries": [
+									"Now sets the duration of the spell up to 24 hours regardless of its initial duration. The minimum duration must still be 1 minute."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Heightened Spell",
+								"entries": [
+									"The creature has disadvantage against all saves to resist your spell, not just the first."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Quickened Spell",
+								"entries": [
+									"When you use this to change a spell to a bonus action spell, you may also use your action to cast another spell. The spell must be of a level equal to, or lower than the quickened spell."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Subtle Spell",
+								"entries": [
+									"Your spell may also be cast in circumstances that otherwise would deny magic from occuring (i.e. such as in an antimagic zone)."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Twinned Spell",
+								"entries": [
+									"You may spend further sorcery points to keep duplicating the spell to new targets. This can be done as many times as you have targets and sorcery points to maintain it. Each new target costs the Twinned Spell cost again (i.e. a 3rd level spell, with three extra targets, costs 9 sorcery points)."
+								]
+							}
+						]
+					}
+				]
+			],
+			"subclassTitle": "Sorcerous Origin",
+			"subclasses": [
+				{
+					"name": "Draconic Bloodline",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Draconic Bloodline",
+								"entries": [
+									"Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.",
+									{
+										"type": "entries",
+										"name": "Dragon Ancestor",
+										"entries": [
+											"At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.",
+											{
+												"type": "table",
+												"caption": "Draconic Ancestry",
+												"colLabels": [
+													"Dragon",
+													"Damage Type"
+												],
+												"colStyles": [
+													"col-6 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Black",
+														"{@filter Acid|spells|damage type=acid|class=sorcerer}"
+													],
+													[
+														"Blue",
+														"{@filter Lightning|spells|damage type=lightning|class=sorcerer}"
+													],
+													[
+														"Brass",
+														"{@filter Fire|spells|damage type=fire|class=sorcerer}"
+													],
+													[
+														"Bronze",
+														"{@filter Lightning|spells|damage type=lightning|class=sorcerer}"
+													],
+													[
+														"Copper",
+														"{@filter Acid|spells|damage type=acid|class=sorcerer}"
+													],
+													[
+														"Gold",
+														"{@filter Fire|spells|damage type=fire|class=sorcerer}"
+													],
+													[
+														"Green",
+														"{@filter Poison|spells|damage type=poison|class=sorcerer}"
+													],
+													[
+														"Red",
+														"{@filter Fire|spells|damage type=fire|class=sorcerer}"
+													],
+													[
+														"Silver",
+														"{@filter Cold|spells|damage type=cold|class=sorcerer}"
+													],
+													[
+														"White",
+														"{@filter Cold|spells|damage type=cold|class=sorcerer}"
+													]
+												]
+											},
+											"You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your Proficiency bonus is doubled if it applies to the check."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Draconic Resilience",
+										"entries": [
+											"As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.",
+											"Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier.",
+											"You also gain a set of retractable draconic claws that deal {@dice 1d4} + your Strength modifier slashing damage."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Birthright Spells",
+										"entries": [
+											"You gain a small list of spells as Birthright spells, based on your Draconic Ancestry. They do not count towards your known spells.",
+											"Regardless of your lineage, you gain an extra 6th, 7th, 8th and 9th level spell of your choice from the Sorcerer spell list. These do not count against your known spells. These spells may be from any classes' spell list provided they have a damage component that deals your Draconic Ancestry's damage type.",
+											"The spells become available to you when you gain spell slots of the appropriate level.",
+											{
+												"type": "table",
+												"caption": "Black Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Acid Splash}"
+													],
+													[
+														"1",
+														"{@spell Fog Cloud}, {@spell Grease}"
+													],
+													[
+														"2",
+														"{@spell Melf's Acid Arrow}, {@spell Hold Person}"
+													],
+													[
+														"3",
+														"{@spell Water Breathing}, {@spell Water Walk}"
+													],
+													[
+														"4",
+														"{@spell Vitriolic Sphere|xge}, {@spell Watery Sphere|xge}"
+													],
+													[
+														"5",
+														"{@spell Steel Wind Strike|xge}, {@spell Antilife Shell}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Blue Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Shocking Grasp}"
+													],
+													[
+														"1",
+														"{@spell Witch Bolt}, {@spell Shield}"
+													],
+													[
+														"2",
+														"{@spell Mirror Image}, {@spell Blur}"
+													],
+													[
+														"3",
+														"{@spell Lightning Bolt}, {@spell Blink}"
+													],
+													[
+														"4",
+														"{@spell Storm Sphere|xge}, {@spell Otiluke's Resillient Sphere|xge}"
+													],
+													[
+														"5",
+														"{@spell Telekinesis}, {@spell Antilife Shell}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Brass Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Produce Flame}"
+													],
+													[
+														"1",
+														"{@spell Hellish Rebuke}, {@spell Catapult|xge}"
+													],
+													[
+														"2",
+														"{@spell Heat Metal}, {@spell Dust Devil|xge}"
+													],
+													[
+														"3",
+														"{@spell Erupting Earth|xge}, {@spell Meld into Stone}"
+													],
+													[
+														"4",
+														"{@spell Stone Shape}, {@spell Stoneskin}"
+													],
+													[
+														"5",
+														"{@spell Wall of Stone}, {@spell Transmute Rock|xge}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Bronze Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Lightning Lure|scag}"
+													],
+													[
+														"1",
+														"{@spell Speak With Animals}, {@spell Entangle}"
+													],
+													[
+														"2",
+														"{@spell Detect Thoughts}, {@spell Beast Sense}"
+													],
+													[
+														"3",
+														"{@spell Call Lightning}, {@spell Speak with Plants}"
+													],
+													[
+														"4",
+														"{@spell Grasping Vine}, {@spell Giant Insect}"
+													],
+													[
+														"5",
+														"{@spell Wrath of Nature|xge}, {@spell Commune with Nature}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Copper Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Acid Splash}"
+													],
+													[
+														"1",
+														"{@spell Tasha's Hideous Laughter}, {@spell Color Spray}"
+													],
+													[
+														"2",
+														"{@spell Melf's Acid Arrow}, {@spell Misty Step}"
+													],
+													[
+														"3",
+														"{@spell Fly}, {@spell Thunder Step|xge}"
+													],
+													[
+														"4",
+														"{@spell Vitriolic Sphere|xge}, {@spell Dimension Door}"
+													],
+													[
+														"5",
+														"{@spell Mislead}, {@spell Far Step|xge}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Gold Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Green-Flame Blade|scag}"
+													],
+													[
+														"1",
+														"{@spell Searing Smite}, {@spell Shield of Faith}"
+													],
+													[
+														"2",
+														"{@spell Flame Blade}, {@spell Barkskin}"
+													],
+													[
+														"3",
+														"{@spell Flame Arrows|xge}, {@spell Crusader's Mantle}"
+													],
+													[
+														"4",
+														"{@spell Fire Shield}, {@spell Death Ward}"
+													],
+													[
+														"5",
+														"{@spell Flame Strike}, {@spell Geas}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Green Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Poison Spray}"
+													],
+													[
+														"1",
+														"{@spell Ray of Sickness}, {@spell Charm Person}"
+													],
+													[
+														"2",
+														"{@spell Enthrall}, {@spell Suggestion}"
+													],
+													[
+														"3",
+														"{@spell Stinking Cloud}, {@spell Sending}"
+													],
+													[
+														"4",
+														"{@spell Compulsion}, {@spell Charm Monster|xge}"
+													],
+													[
+														"5",
+														"{@spell Cloudkill}, {@spell Scrying}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Red Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Fire Bolt}"
+													],
+													[
+														"1",
+														"{@spell Burning Hands}, {@spell Command}"
+													],
+													[
+														"2",
+														"{@spell Aganazzar's Scorcher|xge}, {@spell Scorching Ray}"
+													],
+													[
+														"3",
+														"{@spell Fireball}, {@spell Melf's Minute Meteors|xge}"
+													],
+													[
+														"4",
+														"{@spell Dominate Beast}, {@spell Wall of Fire}"
+													],
+													[
+														"5",
+														"{@spell Dominate Person}, {@spell Immolation|xge}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Silver Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Frostbite|xge}"
+													],
+													[
+														"1",
+														"{@spell Armor of Agathys}, {@spell Heroism}"
+													],
+													[
+														"2",
+														"{@spell Warding Bond}, {@spell Healing Spirit|xge}"
+													],
+													[
+														"3",
+														"{@spell Life Transference|xge}, {@spell Beacon of Hope}"
+													],
+													[
+														"4",
+														"{@spell Guardian of Faith}, {@spell Fire Shield}"
+													],
+													[
+														"5",
+														"{@spell Rary's Telepathic Bond}, {@spell Hallow}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "White Lineage",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-2 text-center",
+													"col-6 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Ray of Frost}"
+													],
+													[
+														"1",
+														"{@spell Ice Knife}, {@spell Cause Fear}"
+													],
+													[
+														"2",
+														"{@spell Snilloc's Snowball Swarm|xge}, {@spell Web}"
+													],
+													[
+														"3",
+														"{@spell Sleet Storm}, {@spell Fear}"
+													],
+													[
+														"4",
+														"{@spell Ice Storm}, {@spell Phantasmal Killer}"
+													],
+													[
+														"5",
+														"{@spell Cone of Cold}, {@spell Telekinesis}"
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Elemental Affinity",
+										"entries": [
+											"Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell.",
+											"You also gain resistance to the damage type."
+										]
+									}
+								]
+							},
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Draconic Features",
+										"entries": [
+											"At 6th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.",
+											"You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.",
+											"In addition, you can manifest a prehensile tail. You can manipulate objects up to a range of 10 ft. with it. The tail can only move a weight of up to your Strength score in pounds. The tail can be used to make weapon attacks, but only if the weapon has the light property."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Draconic Presence",
+										"entries": [
+											"Beginning at 14th level, you can channel the dread presence of your dragon ancestor, causing those around you to become awestruck or frightened.",
+											"As an action, you can draw on this power and exude an aura of awe or fear (your choice) to a distance of 60 feet.",
+											"For 1 minute, each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be {@condition charmed} (if you chose awe) or {@condition frightened} (if you chose fear) until the aura ends.",
+											"A creature that succeeds on this saving throw is immune to your aura for 24 hours.",
+											"On every successive turn, they can reroll the save. Any creature that passes becomes immune to your charm/fear aura for 24 hours.",
+											"You have one free usage of this feature that you regain after a long rest. Further uses cost 5 Sorcery Points."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Draconic Ascendancy",
+										"entries": [
+											"Beginning at 18th level, your draconic lineage becomes more pronounced.",
+											"While your draconic features feature is active, you gain 10 ft. of blindsight (or an extra 5 ft. if you already have access to blindsight).",
+											"Your Elemental Affinity gives you immunity to your damage type.",
+											"Your Draconic Presence feature regains the usage of its free cast after a short or long rest."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "PHB",
+					"shortName": "Draconic"
+				},
+				{
+					"name": "Wild Magic",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Wild Magic",
+								"entries": [
+									"Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.",
+									{
+										"type": "entries",
+										"name": "Wild Magic Surge",
+										"entries": [
+											"When you cast a Sorcerer spell of 1st level or higher, the DM can make you roll a {@dice d20}. If the result of that {@dice d20} roll is a 1, you roll on the Wild Magic Surge table.",
+											"Wild magic effects cannot be manipulated with metamagic, nor do they require concentration to maintain.",
+											{
+												"type": "table",
+												"caption": "Wild Magic Surge",
+												"colLabels": [
+													"{@dice d100}",
+													"Effect"
+												],
+												"colStyles": [
+													"col-1 text-center",
+													"col-11"
+												],
+												"rows": [
+													[
+														"01-02",
+														"Roll on this table at the start of each of your turns for the next minute, ignoring this result on subsequent rolls."
+													],
+													[
+														"03-04",
+														"For the next minute, you can see any {@condition invisible} creature if you have line of sight to it."
+													],
+													[
+														"05-06",
+														"A modron chosen and controlled by the DM appears in an unoccupied space within 5 feet of you, then disappears 1 minute later."
+													],
+													[
+														"07-08",
+														"You cast {@spell fireball} as a 3rd-level spell centered on yourself."
+													],
+													[
+														"09-10",
+														"You cast {@spell magic missile} as a 5th-level spell."
+													],
+													[
+														"11-12",
+														"Roll a {@dice d10}. Your height changes by a number of inches equal to the roll. If the roll is odd, you shrink. If the roll is even, you grow."
+													],
+													[
+														"13-14",
+														"You cast {@spell confusion} centered on yourself."
+													],
+													[
+														"15-16",
+														"For the next minute, you regain 5 hit points at the start of each of your turns."
+													],
+													[
+														"17-18",
+														"You grow a long beard made of feathers that remains until you sneeze, at which point the feathers explode out from your face."
+													],
+													[
+														"19-20",
+														"You cast {@spell grease} centered on yourself."
+													],
+													[
+														"21-22",
+														"Creatures have disadvantage on saving throws against the next spell you cast in the next minute that involves a saving throw."
+													],
+													[
+														"23-24",
+														"Your skin turns a vibrant shade of blue. A {@spell remove curse} spell can end this effect."
+													],
+													[
+														"25-26",
+														"An eye appears on your forehead for the next minute. During that time, you have advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+													],
+													[
+														"27-28",
+														"For the next minute, all your spells with a casting time of 1 action have a casting time of 1 bonus action."
+													],
+													[
+														"29-30",
+														"You teleport up to 60 feet to an unoccupied space of your choice that you can see."
+													],
+													[
+														"31-32",
+														"You are transported to the Astral Plane until the end of your next turn, after which time you return to the space you previously occupied or the nearest unoccupied space if that space is occupied."
+													],
+													[
+														"33-34",
+														"Maximize the damage of the next damaging spell you cast within the next minute."
+													],
+													[
+														"35-36",
+														"Roll a {@dice d10}. Your age changes by a number of years equal to the roll. If the roll is odd, you get younger (minimum 1 year old). If the roll is even, you get older."
+													],
+													[
+														"37-38",
+														"{@dice 1d6} {@creature flumph||flumphs} controlled by the DM appear in unoccupied spaces within 60 feet of you and are {@condition frightened} of you. They vanish after 1 minute."
+													],
+													[
+														"39-40",
+														"You regain {@dice 2d10} hit points."
+													],
+													[
+														"41-42",
+														"You turn into a potted plant until the start of your next turn. While a plant, you are {@condition incapacitated} and have vulnerability to all damage. If you drop to 0 hit points, your pot breaks, and your form reverts."
+													],
+													[
+														"43-44",
+														"For the next minute, you can teleport up to 20 feet as a bonus action on each of your turns."
+													],
+													[
+														"45-46",
+														"You cast {@spell levitate} on yourself."
+													],
+													[
+														"47-48",
+														"A {@creature unicorn} controlled by the DM appears in a space within 5 feet of you, then disappears 1 minute later."
+													],
+													[
+														"49-50",
+														"You can't speak for the next minute. Whenever you try, pink bubbles float out of your mouth."
+													],
+													[
+														"51-52",
+														"A spectral shield hovers near you for the next minute, granting you a +2 bonus to AC and immunity to {@spell magic missile}."
+													],
+													[
+														"53-54",
+														"You are immune to being intoxicated by alcohol for the next {@dice 5d6} days."
+													],
+													[
+														"55-56",
+														"Your hair falls out but grows back within 24 hours."
+													],
+													[
+														"57-58",
+														"For the next minute, any flammable object you touch that isn't being worn or carried by another creature bursts into flame."
+													],
+													[
+														"59-60",
+														"You regain your lowest-level expended spell slot."
+													],
+													[
+														"61-62",
+														"For the next minute, you must shout when you speak."
+													],
+													[
+														"63-64",
+														"You cast {@spell fog cloud} centered on yourself."
+													],
+													[
+														"65-66",
+														"Up to three creatures you choose within 30 feet of you take {@dice 4d10} lightning damage."
+													],
+													[
+														"67-68",
+														"You are {@condition frightened} by the nearest creature until the end of your next turn."
+													],
+													[
+														"69-70",
+														"Each creature within 30 feet of you becomes {@condition invisible} for the next minute. The invisibility ends on a creature when it attacks or casts a spell."
+													],
+													[
+														"71-72",
+														"You gain resistance to all damage for the next minute."
+													],
+													[
+														"73-74",
+														"A random creature within 60 feet of you becomes poisoned for {@dice 1d4} hours."
+													],
+													[
+														"75-76",
+														"You glow with bright light in a 30-foot radius for the next minute. Any creature that ends its turn within 5 feet of you is {@condition blinded} until the end of its next turn."
+													],
+													[
+														"77-78",
+														"You cast {@spell polymorph} on yourself. If you fail the saving throw, you turn into a sheep for the spell's duration."
+													],
+													[
+														"79-80",
+														"Illusory butterflies and flower petals flutter in the air within 10 feet of you for the next minute."
+													],
+													[
+														"81-82",
+														"You can take one additional action immediately."
+													],
+													[
+														"83-84",
+														"Each creature within 30 feet of you takes {@dice 1d10} necrotic damage. You regain hit points equal to the sum of the necrotic damage dealt."
+													],
+													[
+														"85-86",
+														"You cast {@spell mirror image}."
+													],
+													[
+														"87-88",
+														"You cast {@spell fly} on a random creature within 60 feet of you."
+													],
+													[
+														"89-90",
+														"You become {@condition invisible} for the next minute. During that time, other creatures can't hear you. The invisibility ends if you attack or cast a spell."
+													],
+													[
+														"91-92",
+														"If you die within the next minute, you immediately come back to life as if by the {@spell reincarnate} spell."
+													],
+													[
+														"93-94",
+														"Your size increases by one size category for the next minute."
+													],
+													[
+														"95-96",
+														"You and all creatures within 30 feet of you gain vulnerability to piercing damage for the next minute."
+													],
+													[
+														"97-98",
+														"You are surrounded by faint, ethereal music for the next minute."
+													],
+													[
+														"99-00",
+														"You regain all expended sorcery points."
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Tides of Chaos",
+										"entries": [
+											"Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again.",
+											"Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Birthright Magic: Manifest Chaos",
+										"entries": [
+											"At 1st level you can use a bonus action to force a Wild Magic Surge to happen a number of times equal to your Charisma modifier (minimum 1).",
+											"This also refreshes your Tides of Chaos feature.",
+											"You regain usage of this feature on a short or long rest.",
+											"In addition, You may spend Sorcery Points to move up to down a result on the Wild Magic Surge table. For every Sorcery Point you spend, you can increase or decrease (your choice) the d100 result by 1. You cannot spend more Sorcery points than your Charisma modifier (minimum 1) on moving the result each Wild Magic Surge."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Bend Luck",
+										"entries": [
+											"Starting at 6th level, you have the ability to twist fate using your wild magic. When another creature you can see makes an attack roll, an ability check, or a saving throw, you can use your reaction and spend 1 sorcery point to roll {@dice 1d4} and apply the number rolled as a bonus or penalty (your choice) to the creature's roll.",
+											"You can do so after the creature rolls but before any effects of the roll occur.",
+											"At 9th level, the die becomes a {@dice d6}. At 12th, a {@dice d8}; at 15th, a {@dice d10}; and at 18th, a {@dice d12}."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Controlled Chaos",
+										"entries": [
+											"At 14th level, you gain a modicum of control over the surges of your wild magic. Whenever you roll on the Wild Magic Surge table, you can roll twice and use either number.",
+											"In addition, you now regain the use of your Tides of Chaos feature after a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Spell Bombardment",
+										"entries": [
+											"At 18th level, when you roll damage for a spell and roll the maximum number of any of the damage dice, you can reroll those dice and add them to the total."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "PHB",
+					"shortName": "Wild"
+				},
+				{
+					"name": "Storm Sorcery",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Storm Sorcery",
+								"entries": [
+									"Your innate magic comes from the power of elemental air. Perhaps you were born during a howling gale so powerful that folk still tell stories of it. Your lineage might include the influence of potent air creatures such as vaati or djinni. Whatever the case, the magic of the storm permeates your soul.",
+									"Storm sorcerers are invaluable members of a ship's crew. Their magic allows them to exert control over wind and weather in their immediate area. Their abilities also prove useful in repelling attacks by sahuagin, pirates, and other waterborne threats.",
+									{
+										"type": "entries",
+										"name": "Tempestuous Magic",
+										"entries": [
+											"Starting at 1st level, you can use a bonus action on your turn to cause whirling gusts of elemental air to briefly surround you, immediately before or after you cast a spell of 1st level or higher. Doing so allows you to fly up to 10 feet without provoking opportunity attacks."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Wind Speaker",
+										"entries": [
+											"The arcane magic you command is infused with elemental air. You can speak, read, and write Primordial. (Knowing this language allows you to understand and be understood by those who speak its dialects: Aquan, Auran, Ignan, and Terran.)"
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Birthright Magic",
+										"entries": [
+											"You gain the following spells when you have the appropriate spell slots to use them. These do not count towards your known spells.",
+											{
+												"type": "table",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-1 text-center",
+													"col-4 text-center"
+												],
+												"rows": [
+													[
+														"Cantrip",
+														"{@spell Gust|xge}"
+													],
+													[
+														"1",
+														"{@spell Fog Cloud}, {@spell Zephyr Strike|xge}"
+													],
+													[
+														"2",
+														"{@spell Skywrite}, {@spell Gust of Wind}"
+													],
+													[
+														"3",
+														"{@spell Wind Wall}, {@spell Call Lightning}"
+													],
+													[
+														"4",
+														"{@spell Control Water}, {@spell Freedom of Movement}"
+													],
+													[
+														"5",
+														"{@spell Maelstrom|xge}, {@spell Control Winds|xge}"
+													],
+													[
+														"6",
+														"{@spell Wind Walk}"
+													],
+													[
+														"7",
+														"{@spell Whirlwind|xge}"
+													],
+													[
+														"8",
+														"{@spell Control Weather}"
+													],
+													[
+														"9",
+														"{@spell Storm of Vengeance}"
+													]
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Heart of the Storm",
+										"entries": [
+											"At 6th level, you gain resistance to lightning and thunder damage. In addition, whenever you cast a spell of 1st level or higher that deals lightning or thunder damage, stormy magic erupts from you. This eruption causes creatures of your choice that you can see within 10 feet of you to take lightning or thunder damage (choose each time this ability activates) equal to your sorcerer level + the level of the spell slot used (cantrips count as having a spell slot level of 0).",
+											"Creatures that suffer lightning damage from this feature must make a Strength saving throw against your spell DC or be thrown 10 feet away, or lose their reactions until the beginning of their next turn (your choice).",
+											"Creatures that suffer thunder damage from this feature must made a Constitution saving throw against your spell DC or be thrown 10 feet away, or be knocked prone (your choice)."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Storm Guide",
+										"entries": [
+											"At 6th level, you gain the ability to subtly control the weather around you.",
+											"If it is raining, you can use an action to cause the rain to stop falling in a 20-foot radius centered on you. You can end this effect as a bonus action.",
+											"If it is windy, you can use a bonus action each round to choose the direction that the wind blows in a 100-foot radius around you. The wind blows in that direction until the end of your next turn. You have no ability to alter the speed of the wind.",
+											"While raining, creatures have disadvantage to save against your lightning damage spells and effects, including from your Heart of the Storm and Storm's Fury features. In addition, the radius of your Heart of the Storm feature extends to 30 ft. if you use it for lightning damage.",
+											"While windy, creatures have disadvantage to save against your thunder damage spells and effects, including from your Heart of the Storm and Storm's Fury features. In addition, the radius of your Heart of the Storm feature extends to 30 ft. if you use it for thunder damage."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Storm's Fury",
+										"entries": [
+											"Starting at 14th level, when you are hit by a melee attack, you can use your reaction to deal lightning or thunder damage to the attacker. The damage equals your sorcerer level. The attacker must also make a Strength saving throw (for lightning) or a Constitution saving throw (for thunder) against your sorcerer spell save DC. On a failed save, is pushed in a straight line up to 20 feet away from you."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Wind Soul",
+										"entries": [
+											"At 18th level, you gain immunity to lightning and thunder damage.",
+											"You also gain a magical flying speed of 60 feet. As an action, you can reduce your flying speed to 30 feet for 1 hour and choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier. The chosen creatures gain a magical flying speed of 30 feet for 1 hour. Once you reduce your flying speed in this way, you can't do so again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "XGE",
+					"shortName": "Storm"
+				},
+				{
+					"name": "Elementalist",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Elementalist",
+								"entries": [
+									"Your innate magic manifests in an element. You are your fire, you are your frost, you are your lightning, and they are you.",
+									{
+										"type": "entries",
+										"name": "Elemental Birthright",
+										"entries": [
+											"At 1st level you may pick a damage type from the following: Fire, Cold, Acid, Poison, Lightning, Thunder, Radiant, Necrotic, Psychic or 'Physical' (a combination of Bludgeoning, Piercing and Slashing - all your features will inflict whichever is appropriate for the spell cast).",
+											"When you pick your category, you may pick spells freely from any class's spell list provided they have a damage component that matches your element."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Elemental Heart",
+										"entries": [
+											"At 1st level, whenever you start casting a spell of 1st level or higher that deals your damage type, you can cause creatures of your choice that you can see within 10 feet of either you or one of your spell targets (your choice, targets of your spells may be chosen by this effect) to suffer that damage type equal to your sorcerer level + the spell slot level used.",
+											"You also add your Charisma Modifier to spells and Elementalist features that inflict your damage type."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Flows in the Veins",
+										"entries": [
+											"At 6th level, you gain resistance, and ignore resistance, to your damage type.",
+											"In addition, you learn 2 extra spells. These spells do not count towards your spells known."
+										]
+									}
+								]
+							},
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Elemental Flesh",
+										"entries": [
+											"At 6th level, your chosen element begins to manifest physically. You may call forth or dismiss these manifestations with a bonus action. The manifestations are mostly cosmetic, your skin takes on the appearance and texture of your chosen element and your hair shines with a light appropriate to it.",
+											"While active, you radiate 30 ft. of bright light and a further 30 ft. of dim light. In addition, Enemies that attempt to grapple you suffer damage equal to your Charisma modifier in your damage type. You also do not suffer the effects of extreme environmental conditions, such as heat or cold.",
+											"While active, your unarmed attacks also deal {@dice 1d4} + your Strength modifier in your damage type."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Elemental Rebuke",
+										"entries": [
+											"At 14th level, when you are hit by an attack, you can use your reaction to deal your sorcerer level + your Charisma modifier in your damage type to the attacker.",
+											"In addition, you learn 2 extra spells. These spells do not count towards your spells known."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Elemental Soul",
+										"entries": [
+											"At 18th level, you gain immunity to your damage type. You also treat immunity to your damage type as resistance.",
+											"In addition, you learn 2 extra spells. These spells do not count towards your spells known."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "PSK",
+					"shortName": "Elementalist"
+				},
+				{
+					"name": "Divine Soul",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Divine Soul",
+								"entries": [
+									"Sometimes the spark of magic that fuels a sorcerer comes from a divine source that glimmers within the soul. Having such a blessed soul is a sign that your innate magic might come from a distant but powerful familial connection to a divine being. Perhaps your ancestor was an angel, transformed into a mortal and sent to fight in a god's name.",
+									"Or your birth might align with an ancient prophecy, marking you as a servant of the gods or a chosen vessel of divine magic.",
+									"A Divine Soul, with a natural magnetism, is seen as a threat by some religious hierarchies. As an outsider who commands sacred power, a Divine Soul can undermine an existing order by claiming a direct tie to the divine.",
+									"In some cultures, only those who can claim the power of a Divine Soul may command religious power. In these lands, ecclesiastical positions are dominated by a few bloodlines and preserved over generations.",
+									{
+										"type": "entries",
+										"name": "Birthright Spells: Divine Magic",
+										"entries": [
+											"You may take any spell from the Cleric list as if they were Sorcerer spells. They become Sorcerer spells for you. You cannot take any spell you don't have the spell slots for.",
+											"You also gain an extra cantrip of your choice from the cleric spell list.",
+											"You may choose between Law, Good, Chaos, Evil, or Neutrality for your bloodline, these determine the spells from your Birthright Magic feature. These spells become available to you when you gain spell slots of the appropriate level.",
+											"You also gain a 6th, 7th, 8th, and 9th level spell of your choice from the Cleric spell list when you can access those spell slots. These don't count towards your known spells.",
+											{
+												"type": "table",
+												"caption": "Law",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-1",
+													"col-3"
+												],
+												"rows": [
+													[
+														"1st",
+														"{@spell Command}, {@spell Compelled Duel}"
+													],
+													[
+														"2nd",
+														"{@spell Magic Weapon}, {@spell Zone of Truth}"
+													],
+													[
+														"3rd",
+														"{@spell Elemental Weapon}, {@spell Crusader's Mantle}"
+													],
+													[
+														"4th",
+														"{@spell Death Ward}, {@spell Stoneskin}"
+													],
+													[
+														"5th",
+														"{@spell Holy Weapon}, {@spell Destructive Wave}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Good",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-1",
+													"col-3"
+												],
+												"rows": [
+													[
+														"1st",
+														"{@spell Cure Wounds}, {@spell Healing Word}"
+													],
+													[
+														"2nd",
+														"{@spell Prayer of Healing}, {@spell Lesser Restoration}"
+													],
+													[
+														"3rd",
+														"{@spell Aura of Vitality}, {@spell Mass Healing Word}"
+													],
+													[
+														"4th",
+														"{@spell Aura of Purity}, {@spell Aura of Life}"
+													],
+													[
+														"5th",
+														"{@spell Mass Cure Wounds}, {@spell Greater Restoration}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Neutral",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-1",
+													"col-3"
+												],
+												"rows": [
+													[
+														"1st",
+														"{@spell Protection from Evil and Good}, {@spell Guiding Bolt}"
+													],
+													[
+														"2nd",
+														"{@spell Augury}, {@spell Find Traps}"
+													],
+													[
+														"3rd",
+														"{@spell Dispel Magic}, {@spell Clairvoyance}"
+													],
+													[
+														"4th",
+														"{@spell Locate Creature}, {@spell Divination}"
+													],
+													[
+														"5th",
+														"{@spell Insect Plague}, {@spell Dispel Evil and Good}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Evil",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-1",
+													"col-3"
+												],
+												"rows": [
+													[
+														"1st",
+														"{@spell Inflict Wounds}, {@spell Bane}"
+													],
+													[
+														"2nd",
+														"{@spell Silence}, {@spell Crown of Madness}"
+													],
+													[
+														"3rd",
+														"{@spell Bestow Curse}, {@spell Remove Curse}"
+													],
+													[
+														"4th",
+														"{@spell Blight}, {@spell Banishment}"
+													],
+													[
+														"5th",
+														"{@spell Contagion}, {@spell Enervation}"
+													]
+												]
+											},
+											{
+												"type": "table",
+												"caption": "Chaos",
+												"colLabels": [
+													"Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-1",
+													"col-3"
+												],
+												"rows": [
+													[
+														"1st",
+														"{@spell Sleeps}, {@spell Cause Fear}"
+													],
+													[
+														"2nd",
+														"{@spell Invisibility}, {@spell Hold Person}"
+													],
+													[
+														"3rd",
+														"{@spell Catnap|xge}, {@spell Fear}"
+													],
+													[
+														"4th",
+														"{@spell Confusion}, {@spell Greater Invisibility}"
+													],
+													[
+														"5th",
+														"{@spell Seeming}, {@spell Hold Monster}"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Favored by the Gods",
+										"entries": [
+											"Starting at 1st level, divine power guards your destiny. If you fail a saving throw or miss with an attack roll, you can roll {@dice 2d4} and add it to the total, possibly changing the outcome. Once you use this feature, you can't use it again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Empowered Healing",
+										"entries": [
+											"Starting at 6th level, the divine energy coursing through you can empower healing spells. Whenever you or an ally within 30 feet of you rolls dice to determine the number of hit points a spell restores, you can spend 1 sorcery point to reroll any number of those dice once, provided you aren't {@condition incapacitated}. You can use this feature only once per turn."
+										]
+									}
+								]
+							},
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Otherworldly Wings",
+										"entries": [
+											"Starting at 6th level, you can use a bonus action to manifest a pair of spectral wings from your back. While the wings are present, you have a flying speed of 30 feet. The wings last until you're {@condition incapacitated}, you die, or you dismiss them as a bonus action.",
+											"The affinity you chose for your Divine Magic feature determines the appearance of the spectral wings: eagle wings for good or law, bat wings for evil or chaos, and dragonfly wings for neutrality.",
+											"They cannot be manifested if you're wearing armour unless that armour is made to accomodate the. Manifesting them with clothing not designed for them may destroy the clothing.",
+											"You may use a bonus action to focus energy into your otherworldly wings, causing them to radiate bright light for 30 ft. and dim light for a further 30 ft. You may dismiss the light with a bonus action."
+										]
+									}
+								]
+							},
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Radiant Blood",
+										"entries": [
+											"At 6th Level, you have resistance to Radiant and Necrotic Damage."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Favour Earnt",
+										"entries": [
+											"At 14th level, you regain usage of your Favoured by the Gods feature whenever you use your Metamagic feature, or your Empowered Healing feature.",
+											"In addition, when a creature you can see within 30 ft fails a saving throw or miss an attack, you can use your Favoured by the Gods feature to add {@dice 2d4} to their roll."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Unearthly Recovery",
+										"entries": [
+											"At 18th level, you gain the ability to overcome grievous injuries. As a bonus action when you have fewer than half of your hit points remaining, you can regain a number of hit points equal to half your hit point maximum.",
+											"Once you use this feature, you can't use it again until you finish a short or long rest."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "XGE",
+					"shortName": "Divine Soul"
+				},
+				{
+					"name": "Shadow Magic",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Shadow Magic",
+								"entries": [
+									"You are a creature of shadow, for your innate magic comes from the Shadowfell itself. You might trace your lineage to an entity from that place, or perhaps you were exposed to its fell energy and transformed by it.",
+									"The power of shadow magic casts a strange pall over your physical presence. The spark of life that sustains you is muffled, as if it struggles to remain viable against the dark energy that imbues your soul. At your option, you can pick from or roll on the Shadow Sorcerer Quirks table to create a quirk for your character.",
+									{
+										"type": "table",
+										"caption": "Shadow Sorcerer Quirks",
+										"colLabels": [
+											"d6",
+											"Quirk"
+										],
+										"colStyles": [
+											"col-2 text-center",
+											"col-10"
+										],
+										"rows": [
+											[
+												"1",
+												"You are always icy cold to the touch."
+											],
+											[
+												"2",
+												"When you are asleep, you don't appear to breathe (though you must still breathe to survive)."
+											],
+											[
+												"3",
+												"You barely bleed, even when badly injured."
+											],
+											[
+												"4",
+												"Your heart beats once per minute. This event sometimes surprises you."
+											],
+											[
+												"5",
+												"You have trouble remembering that living creatures and corpses should be treated differently."
+											],
+											[
+												"6",
+												"You blinked. Once. Last week."
+											]
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Eyes of the Dark",
+										"entries": [
+											"Starting at 1st level, you have darkvision with a range of 120 feet.",
+											"When you reach 3rd level in this class, you learn the {@spell darkness} spell, which doesn't count against your number of sorcerer spells known. In addition, you can cast it by spending 2 sorcery points or by expending a spell slot. If you cast it with sorcery points, you can see through the {@spell darkness} created by the spell."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Strength of the Grave",
+										"entries": [
+											"At 1st level, when you are reduced to 0 hit points, make a Charisma Save (DC = 5 + last damage taken). If you succeed you are reduced to 1 hit point instead. At 3rd level this also triggers the Reap Entropy feature. You can't use this feature if Radiant damage or a critical hit reduces you to 0.",
+											"You regain use of this feature after a long rest."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Birthright Magic: Reap Entropy",
+										"entries": [
+											"At 3rd level, when a creature inside an area covered by {@spell darkness} created with your sorcery points is reduced to 0 hit points, or suffers a critical hit, you gain temporary hit points equal to your Charisma modifier and restore 1 sorcery point. These temporary hit points last until your next long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Hound of Ill Omen",
+										"entries": [
+											"At 6th level you can use your bonus action and spend 3 sorcery points to call forth the 'hound' to harry a target within 120 feet. It's stat block is a {@creature Dire Wolf} with the following provisions:",
+											{
+												"type": "list",
+												"items": [
+													"Medium, not Large",
+													"Monstrosity, not Beast",
+													"Has Temporary hp = half your Sorcerer Level",
+													"It can move through other creatures and objects, treating them as rough terrain. It suffers 5 force damage if it ends its turn inside something.",
+													"At the start of its turn, the hound automatically knows its target's location. If the target was hidden, it is no longer hidden from the hound."
+												]
+											},
+											"When summoned, the hound appears within 30 feet of you in an unoccupied space. You roll for its initiative.",
+											"Its turn can only be spent either chasing the target through the most direct route, or attacking the target. It can make opportunity attacks, but only against the target. If the hound is within 5 feet of the target, the target suffers disadvantage on spell saving throws against your spells. If the hound, or its target are reduced to 0 hit points, or 5 minutes elapse after the hounds' summoning, it disappears. If the target is reduced to 0 while the hound is still active, you refund its sorcery point cost.",
+											"Whenever your Reap Entropy feature triggers, a Hound of Ill Omen may be summoned as a reaction, but may only target a creature within your Sorcery Point generated {@spell darkness} spell."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Shadow Walk",
+										"entries": [
+											"At 14th level, when you're in dim light or darkness, you can use your bonus action to teleport 120 feet to another point in dim light or darkness.",
+											"When you use this feature inside {@spell darkness} created by Sorcery Points, you may trigger Reap Entropy. This can be done a number of times equal to your Charisma modifier (minimum 1). You regain usage of this feature after a long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Umbral Form",
+										"entries": [
+											"At 18th level, you can spend a bonus action and 6 sorcery point to transcend into a shadowy form - giving yourself:",
+											{
+												"type": "list",
+												"items": [
+													"Resistance to all forms of damage except force and radiant",
+													"The ability to move through solid objects and other creatures as if they were difficult terrain (suffering 5 force damage if you end your turn inside something)"
+												]
+											},
+											"You remain in this form for 1 minute. If you are incapacitated, reduced to 0 hp or you spend a bonus action to dismiss it early, the form ends.",
+											"While in your Umbral Form, the temporary hit points and Sorcery Points gained from Reap Entropy are doubled."
+										]
+									}
+								]
+							}
+						]
+					],
+					"source": "XGE",
+					"shortName": "Shadow"
+				}
+			],
+			"fluff": [
+				{
+					"entries": [
+						"Golden eyes flashing, a human stretches out her hand and unleashes the dragonfire that burns in her veins. As an inferno rages around her foes, leathery wings spread from her back and she takes to the air.",
+						"Long hair whipped by a conjured wind, a half-elf spreads his arms wide and throws his head back. Lifting him momentarily off the ground, a wave of magic surges up in him, through him, and out from him in a mighty blast of lightning.",
+						"Crouching behind a stalagmite, a halfling points a finger at a charging troglodyte. A blast of fire springs from her finger to strike the creature. She ducks back behind the rock formation with a grin, unaware that her wild magic has turned her skin bright blue.",
+						"Sorcerers carry a magical birthright conferred upon them by an exotic bloodline, some otherworldly influence, or exposure to unknown cosmic forces. One can't study sorcery as one learns a language, any more than one can learn to live a legendary life. No one chooses sorcery; the power chooses the sorcerer.",
+						{
+							"type": "entries",
+							"name": "Raw Magic",
+							"entries": [
+								"Magic is a part of every sorcerer, suffusing body, mind, and spirit with a latent power that waits to be tapped. Some sorcerers wield magic that springs from an ancient bloodline infused with the magic of dragons. Others carry a raw, uncontrolled magic within them, a chaotic storm that manifests in unexpected ways.",
+								"The appearance of sorcerous powers is wildly unpredictable. Some draconic bloodlines produce exactly one sorcerer in every generation, but in other lines of descent every individual is a sorcerer. Most of the time, the talents of sorcery appear as apparent flukes. Some sorcerers can't name the origin of their power, while others trace it to strange events in their own lives. The touch of a demon, the blessing of a dryad at a baby's birth, or a taste of the water from a mysterious spring might spark the gift of sorcery. So too might the gift of a deity of magic, exposure to the elemental forces of the Inner Planes or the maddening chaos of Limbo, or a glimpse into the inner workings of reality.",
+								"Sorcerers have no use for the spellbooks and ancient tomes of magic lore that wizards rely on, nor do they rely on a patron to grant their spells as warlocks do. By learning to harness and channel their own inborn magic, they can discover new and staggering ways to unleash that power."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Unexplained Powers",
+							"entries": [
+								"Sorcerers are rare in the world, and it's unusual to find a sorcerer who is not involved in the adventuring life in some way. People with magical power seething in their veins soon discover that the power doesn't like to stay quiet. A sorcerer's magic wants to be wielded, and it has a tendency to spill out in unpredictable ways if it isn't called on.",
+								"Sorcerers often have obscure or quixotic motivations driving them to adventure. Some seek a greater understanding of the magical force that infuses them, or the answer to the mystery of its origin. Others hope to find a way to get rid of it, or to unleash its full potential. Whatever their goals, sorcerers are every bit as useful to an adventuring party as wizards, making up for a comparative lack of breadth in their magical knowledge with enormous flexibility in using the spells they know."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Sorcerer",
+							"entries": [
+								"The most important question to consider when creating your sorcerer is the origin of your power. As a starting character, you'll choose an origin that ties to a draconic bloodline or the influence of wild magic, but the exact source of your power is up to you to decide. Is it a family curse, passed down to you from distant ancestors? Or did some extraordinary event leave you blessed with inherent magic but perhaps scarred as well?",
+								"How do you feel about the magical power coursing through you? Do you embrace it, try to master it, or revel in its unpredictable nature? Is it a blessing or a curse? Did you seek it out, or did it find you? Did you have the option to refuse it, and do you wish you had? What do you intend to do with it? Perhaps you feel like you've been given this power for some lofty purpose. Or you might decide that the power gives you the right to do what you want, to take what you want from those who lack such power. Perhaps your power links you to a powerful individual in the world\u2014the fey creature that blessed you at birth, the dragon who put a drop of its blood into your veins, the lich who created you as an experiment, or the deity who chose you to carry this power.",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"You can make a sorcerer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the hermit background. Third, choose the {@spell light}, {@spell prestidigitation}, {@spell ray of frost}, and {@spell shocking grasp} cantrips, along with the 1st-level spells {@spell shield} and {@spell magic missile}."
+									]
+								}
+							]
+						}
+					],
+					"page": 99,
+					"source": "PHB"
+				},
+				{
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"Practice and study are for amateurs. True power is a birthright."
+							],
+							"by": "Hennet, scion of Tiamat"
+						},
+						"When it comes to drawing forth their abilities in times of need, sorcerers have it easy compared to other characters. Their power not only rests within them, but it likely takes some effort to keep it at bay. Every sorcerer is born to the role, or stumbles into it through cosmic chance. Unlike other characters, who must actively learn, embrace, and pursue their talents, sorcerers have their power thrust upon them.",
+						"Because the idea of an innately magical being traveling among them does not sit well with many folk, sorcerers tend to breed mistrust and suspicion in others they come across. Nonetheless, many sorcerers succeed in overcoming that prejudice through deeds that benefit their less magically gifted contemporaries.",
+						"Sorcerers are often defined by the events surrounding the manifestation of their power. For those who receive it as an expected birthright, its appearance is a cause for celebration. Other sorcerers are treated as outcasts, banished from their homes after the sudden, terrifying arrival of their abilities.",
+						"Playing a sorcerer character can be as rewarding as it is challenging. The sections below offer suggestions on how to flesh out and personalize your persona.",
+						{
+							"type": "entries",
+							"name": "Arcane Origins",
+							"entries": [
+								"Some sorcerers understand where their power came from, based on how their abilities manifested. Others can only speculate, since their powers came to them in a way that suggests no particular cause.",
+								"Does your character know the source of your magical power? Does it tie back to some distant relative, a cosmic event, or blind chance? If your sorcerer doesn't know where their power arose from, your DM can use this table (or select an origin) and reveal it to you when the information plays a role in the campaign.",
+								{
+									"type": "table",
+									"caption": "Arcane Origins",
+									"colLabels": [
+										"{@dice d6}",
+										"Origin"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Your power arises from your family's bloodline. You are related to some powerful creature, or you inherited a blessing or a curse."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"You are the reincarnation of a being from another plane of existence."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"A powerful entity entered the world. Its magic changed you."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Your birth was prophesied in an ancient text, and you are foretold to use your power for terrible ends."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"You are the product of generations of careful, selective breeding."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"You were made in a vat by an alchemist."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Reaction",
+							"entries": [
+								"When a new sorcerer enters the world, either at birth or later when one's power becomes evident, the consequences of that event depend greatly on how its witnesses react to what they have seen.",
+								"When your sorcerer's powers appeared, how did the world around you respond? Were other people supportive, fearful, or somewhere in between?",
+								{
+									"type": "table",
+									"caption": "Reactions",
+									"colLabels": [
+										"{@dice d6}",
+										"Reaction"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Your powers are seen as a great blessing by those around you, and you are expected to use them in service to your community."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Your powers caused destruction and even a death when they became evident, and you were treated as a criminal."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Your neighbors hate and fear your power, causing them to shun you."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"You came to the attention of a sinister cult that plans on exploiting your abilities."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"People around you believe that your powers are a curse levied on your family for a past transgression."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Your powers are believed to be tied to an ancient line of mad kings that supposedly ended in a bloody revolt over a century ago."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Supernatural Mark",
+							"entries": [
+								"A sorcerer at rest is almost indistinguishable from a normal person; it's only when their magic flies forth that sorcerers reveal their true nature. Even so, many sorcerers have a subtle but telling physical trait that sets them apart from other folk.",
+								"If your sorcerer has a supernatural mark, it might be one that's easily concealed, or it could be a source of pride that you keep on constant display.",
+								{
+									"type": "table",
+									"caption": "Supernatural Marks",
+									"colLabels": [
+										"{@dice d6}",
+										"Mark"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Your eyes are an unusual color, such as red."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"You have an extra toe on one foot."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"One of your ears is noticeably larger than the other."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Your hair grows at a prodigious rate."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"You wrinkle your nose repeatedly while you are chewing."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"A red splotch appears on your neck once a day, then vanishes after an hour."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Signs of Sorcery",
+							"entries": [
+								"As the world well knows, some sorcerers are better than others at controlling their spellcasting. Sometimes a wild display of magic gone awry emanates from a sorcerer who casts a spell. But even when one's magic goes off as planned, the act of casting is often accompanied by a telltale sign that makes it clear where that magical energy came from.",
+								"When your sorcerer character casts a spell, does the effort reveal itself in a sign of sorcery? Is this sign tied to your origin or some other aspect of who you are, or is it a seemingly random phenomenon?",
+								{
+									"type": "table",
+									"caption": "Signs of Sorcery",
+									"colLabels": [
+										"{@dice d6}",
+										"Sign"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"You deliver the verbal components of your spells in the booming voice of a titan."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"For a moment after you cast a spell, the area around you grows dark and gloomy."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"You sweat profusely while casting a spell and for a few seconds thereafter."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Your hair and garments are briefly buffeted about, as if by a breeze, whenever you call forth a spell."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"If you are standing when you cast a spell, you rise six inches into the air and gently float back down."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Illusory blue flames wreathe your head as you begin your casting, then abruptly disappear."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 48,
+					"source": "XGE"
+				}
+			],
+			"page": 99
+		}
+	]
+}

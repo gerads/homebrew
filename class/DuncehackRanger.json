@@ -1,0 +1,1945 @@
+{
+    "$schema": "../schema.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "duncehack:Ranger",
+				"full": "Duncehack Ranger Class",
+				"abbreviation": "DH Ranger",
+				"authors": [
+					"Duncehack"
+				],
+				"convertedBy": [
+					"gerads"
+				],
+				"url": "https://homebrewery.naturalcrit.com/share/H1QsbPfCdV",
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1566441761
+	},
+	"class": [
+		{
+			"name": "Ranger",
+			"source": "Duncehack",
+			"hd": {
+				"number": 1,
+				"faces": 10
+			},
+			"proficiency": [
+				"str",
+				"dex"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "1/2",
+			"classTableGroups": [
+                {
+					"colLabels": [
+						"Cantrips Known"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+                {
+					"colLabels": [
+						"{@filter Spells Known|spells|class=ranger}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							5
+						],
+						[
+							5
+						],
+						[
+							6
+						],
+						[
+							6
+						],
+						[
+							7
+						],
+						[
+							7
+						],
+						[
+							8
+						],
+						[
+							8
+						],
+						[
+							9
+						],
+						[
+							9
+						],
+						[
+							10
+						],
+						[
+							10
+						],
+						[
+							11
+						],
+						[
+							11
+						],
+						[
+							12
+						],
+						[
+							12
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=Ranger}",
+						"{@filter 2nd|spells|level=2|class=Ranger}",
+						"{@filter 3rd|spells|level=3|class=Ranger}",
+						"{@filter 4th|spells|level=4|class=Ranger}",
+						"{@filter 5th|spells|level=5|class=Ranger}"
+					],
+					"rows": [
+						[
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2
+						]
+					]
+				}
+			],
+			"startingProficiencies": {
+				"armor": [
+					"light",
+					"medium",
+					"shields"
+				],
+				"weapons": [
+					"simple",
+					"martial"
+                ],
+                "tools": [
+                    "One of: Herbalism Kit, Poisoner's Kit, Disguise Kit, Woodcarver's Tools, Cook's Utensils or Leatherworker's Tools"
+                ],
+				"skills": {
+					"choose": 3,
+					"from": [
+						"Animal Handling",
+						"Athletics",
+						"Insight",
+						"Investigation",
+						"Nature",
+						"Perception",
+						"Stealth",
+						"Survival"
+					]
+				}
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) {@item scale mail|phb} or (b) {@item leather armor|phb}",
+					"(a) two {@item shortsword|phb|shortswords} or (b) two {@filter simple melee weapons|items|source=phb|category=basic|type=simple weapon;melee weapon=sand}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
+                    "A {@item longbow|phb} and a {@item quiver|phb} of {@item arrows (20)|phb|20 arrows}",
+                    "Tools of a kind you are proficient in"
+				],
+				"goldAlternative": "{@dice 5d4×10|5d4 × 10|Starting Gold}"
+			},
+			"multiclassing": {
+				"requirements": {
+					"dex": 13,
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						"shields"
+					],
+					"skills": {
+						"choose": 1,
+						"from": [
+							"Animal Handling",
+							"Athletics",
+							"Insight",
+							"Investigation",
+							"Nature",
+							"Perception",
+							"Stealth",
+							"Survival"
+						]
+					},
+					"weapons": [
+						"simple",
+						"martial"
+					]
+				}
+			},
+			"classFeatures": [
+				[
+					{
+						"name": "Natural Explorer",
+						"entries": [
+							"You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in.",
+							"While traveling for an hour or more in your favored terrain, you gain the following benefits:",
+							{
+								"type": "list",
+								"items": [
+									"Difficult terrain doesn't slow your group's travel.",
+									"Your group can't become lost except by magical means.",
+									"Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.",
+									"If you are traveling alone, you can move stealthily at a normal pace.",
+									"When you forage, you find twice as much food as you normally would.",
+									"While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+								]
+							},
+							"You choose additional favored terrain types at 6th and 10th level."
+						]
+                    },
+                    {
+						"name": "Preparation",
+						"entries": [
+							"At 1st level, whenever you take a long rest, you can spend some time to prepare for enemies you are anticipating.",
+							"During that long rest, you select one of the following: {@filter aberrations|bestiary|type=aberration}, {@filter beasts|bestiary|type=beast}, {@filter celestials|bestiary|type=celestial}, {@filter constructs|bestiary|type=construct}, {@filter dragons|bestiary|type=dragon}, {@filter elementals|bestiary|type=elemental}, {@filter fey|bestiary|type=fey}, {@filter fiends|bestiary|type=fiend}, {@filter giants|bestiary|type=giant}, {@filter monstrosities|bestiary|type=monstrosity}, {@filter oozes|bestiary|type=ooze}, {@filter plants|bestiary|type=plant}, {@filter undead|bestiary|type=undead}, {@filter humanoid|bestiary|type=humanoid}. This becomes your Favoured Enemy",
+							"While you have a creature type selected, you gain the benefits of Foe Slayer and Primeval Awareness against them.",
+							"At 10th level, you may prepare two Favoured Enemies. You also have advantage to saving throws against spells cast by your Favoured Enemies."
+						]
+                    },
+                    {
+						"name": "Foe Slayer",
+						"entries": [
+                            "Once on each of your turns, you can add your Wisdom Modifier to either the attack, or damage roll of a weapon attack against a Favoured Enemy.",
+                            "You can choose to do this before, or after, the roll is made, but before any effects are applied."
+						]
+                    },
+                    {
+						"name": "Primeval Awareness",
+						"entries": [
+                            "If you spend 1 uninterrupted minute in concentration (as if you were concentrating on a spell), you can sense whether any of Favoured Enemies for are present within 5 miles of you. This feature reveals what kinds are present, their numbers, general direction, and distance in miles from you.",
+                            "If there are multiple groups of them within range, you learn this information about each group.",
+                            "In addition, you also get advantage to Wisdom ({@skill Survival}) checks to track them and on Intelligence checks to recall information about the type chosen."
+						]
+					}
+				],
+				[
+                    {
+						"name": "Poultices",
+						"entries": [
+                            "At 2nd level, you can make salves on the fly.",
+                            "You can spend one hour gathering the materials to make them (this can be done while foraging, during a long rest, etc.). When you do, you create up to your Wisdom modifier (minimum 1) in poultices. You can only hold up to your Wisdom modifier (minimum 1) in poultices at a time.",
+                            "They cannot be applied by anyone but you, and all poultices lose their potency if you haven't gathered materials to maintain them in 24 hours.",
+                            "You can spend one minute and a poultice to heal a creature.",
+                            "They restore {@dice 1d6} hit points per two Ranger Levels."
+						]
+					},
+					{
+						"name": "Fighting Style",
+						"entries": [
+							"At 2nd level, you gain a fighting style of your choice.",
+							{
+								"type": "options",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Archery",
+										"entries": [
+											"You gain a +2 bonus to attack rolls you make with ranged weapons.",
+											"When you hit with a ranged attack, you may spend a bonus action to add 1d4 to the damage roll."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Defense",
+										"entries": [
+											"You gain a +1 bonus to AC while wearing armour.",
+											"When you select this fighting style, you may choose one of the following features:",
+											{
+												"type": "options",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Lightly Armored",
+														"entries": [
+															"While wearing light armour or no armour, you gain 5 movement speed.",
+															"In addition, you may treat Chain Shirts as if they are light armour."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Moderately Armored",
+														"entries": [
+															"Wearing medium armour doesn't impose disadvantage on your Dexterity (Stealth) checks.",
+															"In addition, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
+														]
+													},
+													{
+														"type": "entries",
+														"name": "Heavily Armored",
+														"entries": [
+															"While wearing heavy armour, when you are struck by an attack, you ignore up to your proficiency modifier in nonmagical bludgeoning, piercing and slashing damage.",
+															"If you are wearing magical armour, this effect extends to magical bludgeoning, piercing and slashing damage."
+														]
+													}
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Dueling",
+										"entries": [
+											"When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.",
+											"If your other hand is empty, you may spend your bonus action to make a shove, grapple or disarm action.",
+											"When you roll initiative, you may don your shield alongside drawing your weapon. Doffing and donning your shield during that combat afterwards still costs an action."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Great Weapon Fighting",
+										"entries": [
+											"When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.",
+											"When you make an attack action against a creature with a melee weapon you are wielding in two hands, and there's another within 5ft of it that is still within range of your weapon, you deal damage to it equal to your Strength or Dexterity modifier (whichever you used for the attack roll), provided your attack roll would also beat its AC."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Protection",
+										"entries": [
+											"When a creature you can see attacks a target other than you within 5 ft of you, you can impose disadvantage on the attack. You may do this against a number of attacks equal to your proficiency modifier until the beginning of your next turn.",
+											"If a creature within 15 ft. of you is struck by a weapon attack that you can see, you can spend your reaction to move directly towards them. This movement does not provoke attacks of opportunity. When you spend your reaction this way, you must defend the creature you moved towards from the attack.",
+											"You must be wielding a shield."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Two-Weapon Fighting",
+										"entries": [
+											"When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.",
+											"When you critically strike with a weapon attack, you add your other hand's weapon damage die to the damage total.",
+											"You may use the attack provided by your bonus action to make Shove checks.",
+											"You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Unarmed",
+										"entries": [
+											"You are proficient with unarmed strikes and improvised weapons.",
+											"Your unarmed strike uses a d4 for damage. Your unarmed strikes are also considered to have the finesse and light properties. You add your Ability Score Modifier to off-hand damage rolls made with your unarmed strike.",
+											"When you make an attack with an improvised weapon that would be destroyed by the attack (such as breaking a bottle on someone's head), you can add your unarmed damage die to the attack."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Vanguard",
+										"entries": [
+											"When you use your action to Dash, you can use a bonus action to make one melee weapon attack or to shove a creature. If you move at least 10 ft before making this bonus action attack you gain bonus damage equal to your proficiency modifier. If you shove instead, the creature has disadvantage on their skill check to resist it. If you push them with this shove action, they are moved 10 feet instead of 5 feet."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Cavalier",
+										"entries": [
+											"You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you're not incapacitated. Mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.",
+											"While you are mounted and aren't incapacitated, you gain the following benefits:",
+											{
+												"type": "list",
+												"items": [
+													"You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.",
+													"You can force an attack targeted at your mount to target you instead.",
+													"If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"name": "Spellcasting",
+						"entries": [
+							"By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a druid does. See {@book chapter 10|PHB|10} for the general rules of spellcasting and chapter 11 for the {@filter ranger spell list|spells|class=ranger}.",
+                            {
+								"type": "entries",
+								"name": "Cantrips",
+								"entries": [
+									"At 2st level, you know two cantrips of your choice from the druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Ranger table."
+								]
+							},
+                            {
+								"type": "entries",
+								"name": "Spell Slots",
+								"entries": [
+									"The Ranger table shows how many spell slots you have to cast your {@filter ranger spells|spells|class=ranger} of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest.",
+									"For example, if you know the 1st-level spell {@spell animal friendship} and have a 1st-level and a 2nd-level spell slot available, you can cast {@spell animal friendship} using either slot."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Spells Known of 1st Level and Higher",
+								"entries": [
+									"You know three 1st-level spells of your choice from the ranger spell list.",
+									"The Spells Known column of the Ranger table shows when you learn more ranger spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 5th level in this class, you can learn one new spell of 1st or 2nd level.",
+									"Additionally, when you gain a level in this class, you can choose one of the ranger spells you know and replace it with another spell from the ranger spell list, which also must be of a level for which you have spell slots."
+								]
+							},
+							{
+								"type": "entries",
+								"name": "Spellcasting Ability",
+								"entries": [
+									"Wisdom is your spellcasting ability for your ranger spells, since your magic draws on your attunement to nature. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a ranger spell you cast and when making an attack roll with one.",
+									{
+										"type": "abilityDc",
+										"name": "Spell",
+										"attributes": [
+											"wis"
+										]
+									},
+									{
+										"type": "abilityAttackMod",
+										"name": "Spell",
+										"attributes": [
+											"wis"
+										]
+									}
+								]
+                            },
+                            {
+								"type": "entries",
+								"name": "Ritual Casting",
+								"entries": [
+									"You can cast a ranger spell that you know as a ritual if that spell has the ritual tag."
+								]
+							}
+						]
+					}
+				],
+				[
+                    {
+						"name": "Guerrilla Tactics",
+						"entries": [
+                            "At 3rd level, you can {@action Hide} as a bonus action.",
+                            "In addition, enemies you have attacked cannot make opportunity attacks against you until the end of your turn.",
+                            "When you {@action Hide}, provided you then remain motionless, enemies suffer a -10 penalty to their Wisdom ({@skill Perception}) checks to spot you, until the start of your next turn.",
+                            "You lose this benefit when you move (or are moved), or if you are considered no longer hiding due to another action or effect.",
+                            "If you are still hidden at the beginning of your next turn, you continue gaining this benefit so long as you remain motionless.",
+                            "You also cannot be tracked by nonmagical means unless you choose to leave a trail."
+						]
+					},
+					{
+						"name": "Ranger Archetype",
+						"entries": [
+							"At 3rd level, you choose an archetype that you strive to emulate from the list of available archetypes. Your choice grants features at 3rd level, and again at 7th, 11th, and 15th level."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[
+					{
+						"name": "Extra Attack",
+						"entries": [
+							"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn."
+						]
+					}
+				],
+				[
+					{
+						"name": "Hunter's Acumen",
+						"entries": [
+							"At 6th level, {@spell hunter's mark} no longer counts towards your known spells (i.e. you can pick up a new spell to replace it). If it is not on your spell list, you gain it for free.",
+                            "In addition, concentration on either {@spell hunter's mark} or your Primeval Awareness feature may be maintained alongside another Ranger spell, however doing so is taxing and imposes disadvantage on all concentration checks. Failing a concentration check means losing concentration on both effects.",
+                            "Voluntarily losing concentration on one ability does not lose concentration on both.",
+                            "Only two effects may be maintained this way. (If Primeval Awareness and {@spell hunter's mark} are maintained together with this feature, you do not get the ability to use a third concentration effect.)"
+						]
+					}
+				],
+				[
+					{
+						"name": "Ranger Archetype feature",
+						"entries": [
+							"At 7th level, you gain a feature granted to you by your Ranger Archetype."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Natural Antivenom",
+						"entries": [
+							"At 10th level you have resistance to Poison damage and advantage to saving throws against Poison.",
+							"Your poultices now also remove Poisons when applied."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ranger Archetype feature",
+						"entries": [
+							"At 11th level, you gain a feature granted to you by your Ranger Archetype."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Feral Senses",
+						"entries": [
+                            "At 14th level, you no longer suffer disadvantage when attacking targets you cannot see.",
+                            "In addition, you are aware of the positions and movements of invisible creatures within 30 feet of you, provided the creature isn't hidden and you aren't {@condition blinded} or {@condition deafened}."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ranger Archetype feature",
+						"entries": [
+							"At 15th level, you gain a feature granted to you by your Ranger Archetype."
+						],
+						"gainSubclassFeature": true
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[],
+				[
+					{
+						"name": "Heightened Instinct",
+						"entries": [
+                            "At 18th level, when you roll initiative and aren't already hidden, you may use your reaction to make a hide action.",
+                            "In addition, casting {@spell hunter's mark} no longer costs a spell slot. It is always cast at its highest level for you."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ability Score Improvement",
+						"entries": [
+							"When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+							"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+						]
+					}
+				],
+				[
+					{
+						"name": "Ranger Archetype feature",
+						"entries": [
+							"At 20th level, you gain a feature granted to you by your Ranger Archetype."
+						],
+						"gainSubclassFeature": true
+					}
+				]
+			],
+			"subclassTitle": "Ranger Archetype",
+			"subclasses": [
+                {
+					"name": "Beast Master",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Beast Master",
+								"entries": [
+									"The Beast Master archetype embodies a friendship between the civilized races and the beasts of the world. United in focus, beast and ranger work as one to fight the monstrous foes that threaten civilization and the wilderness alike. Emulating the Beast Master archetype means committing yourself to this ideal, working in partnership with an animal as its companion and friend.",
+									{
+										"type": "entries",
+										"name": "Ranger's Companion",
+										"entries": [
+                                            "At 3rd level you get a pet. 8 hours of work, and 50gp of good food, and you can magically convince an animal to be your companion.",
+                                            "The general list of options are: an ape, a black bear, a boar, a giant badger, a giant weasel, a mastiff, a mule, a panther, or a wolf.",
+                                            "A DM however may allow you to pick other creatures at their discretion. The general rule being '{@filter medium or smaller beast of 1/4CR or less|bestiary|challenge rating=[&0;&1/4]|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}'.",
+                                            "At the end of the 8 hours, the creature gains all the benefits of your Companion's Bond feature.",
+                                            "The number of creatures you can have bonded this way vary. You can have either: one 1/4 CR creature (such as a wolf or a panther), two 1/8 CR creatures (such as mastiffs or mules), four 0 CR creatures (such as bat, rats or owls), or one 1/8 CR creature and two 0 CR creatures.",
+                                            "If a companion is ever slain, you can spend 8 hours and 25gp of fine food to bring it back to life. You can do this even if you do not have access to any part of its body.",
+                                            "If you have a new companion when you resurrect an old one (and don't have any 'room' for the old one), the current one leaves and is no longer bonded."
+										]
+									}
+								]
+                            },
+                            {
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Companion's Bond",
+										"entries": [
+                                            "Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, \"The ranger who travels with me is a beloved companion for whom I would gladly give my life.\"",
+                                            {
+                                                "type": "table",
+                                                "colLabels": [
+                                                    "{@dice d6}",
+                                                    "Trait"
+                                                ],
+                                                "colStyles": [
+                                                    "col-1 text-center",
+                                                    "col-11"
+                                                ],
+                                                "rows": [
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 1
+                                                            }
+                                                        },
+                                                        "I am dauntless in the face of adversity."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 2
+                                                            }
+                                                        },
+                                                        "Threaten my friends, threaten me!"
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 3
+                                                            }
+                                                        },
+                                                        "I stay alert so others can rest."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 4
+                                                            }
+                                                        },
+                                                        "People underestimate me for being an animal. I use this to my advantage."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 5
+                                                            }
+                                                        },
+                                                        "I have a knack for showing up in the nick of time."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 6
+                                                            }
+                                                        },
+                                                        "I put my friends' needs above my own in all things."
+                                                    ]
+                                                ]
+                                            },
+                                            {
+                                                "type": "table",
+                                                "colLabels": [
+                                                    "{@dice d6}",
+                                                    "Flaw"
+                                                ],
+                                                "colStyles": [
+                                                    "col-1 text-center",
+                                                    "col-11"
+                                                ],
+                                                "rows": [
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 1
+                                                            }
+                                                        },
+                                                        "I'll eat any and all food left unattended."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 2
+                                                            }
+                                                        },
+                                                        "I growl at strangers. Everyone but my ranger is a stranger."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 3
+                                                            }
+                                                        },
+                                                        "Any time is a good time for a belly rub."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 4
+                                                            }
+                                                        },
+                                                        "I am terrified of water."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 5
+                                                            }
+                                                        },
+                                                        "My idea of 'hello' is to aggressively lick faces."
+                                                    ],
+                                                    [
+                                                        {
+                                                            "type": "cell",
+                                                            "roll": {
+                                                                "exact": 6
+                                                            }
+                                                        },
+                                                        "Jumping on creatures is how I tell them I love them."
+                                                    ]
+                                                ]
+                                            }
+										]
+									}
+								]
+                            },
+                            {
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Teamwork",
+										"entries": [
+                                            "The creature rolls initiative on its own, but you still 'command' it (this is outlined in the 'Coordination' feature).",
+                                            "If you are {@condition incapacitated} or absent, it acts on its own volition.",
+                                            "When you are using the Natural Explorer feature, it can move stealthily with you at normal pace.",
+                                            "Your companion uses your proficiency bonus as its, and your proficiency bonus is added to its AC and damage rolls. It also gains proficiency in two skills of your choice, provided they are possible for the animal to do. It is also proficient in all saving throws.",
+                                            "It has the same number of hit dice as you and its hit points are raised accordingly.",
+                                            "When you gain an Ability Score Increase, it does too. If your game permits feats, your Animal Companion may acquire them so long as it makes sense for the animal to do so. Feats may be incorporated into behaviours where possible."
+										]
+									}
+								]
+                            },
+                            {
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Coordination",
+										"entries": [
+                                            "Your animal companion isn't mind controlled by you, and it does take {@italic some} management by you to get them to work with you the way you need them to.",
+                                            "You have a pool of 'Coordination' points equal to your Wisdom modifier + your Proficiency modifier.",
+                                            "As long as the creature can see or hear you, you can use your reaction on the animal's turn and spend one of these points to direct their attention.",
+                                            "The following behaviours are available: Sic, protect, bail, flee, prowl, harry, assist, and brace. Your DM may allow other behaviours so long as they're clearly outlined and make sense for the animal in question.",
+                                            "When changing a behaviour, the creature will use any action appropriate in carrying it out (e.g. disengage or dash for flee, dodge for brace, help for assist, etc.). They will also use their reactions on opportunity attacks whenever given the opening unless their behaviour stipulates otherwise.",
+                                            "You can use this feature without the expenditure of Coordination points, however doing so requires an action.",
+                                            "You regain usages of this feature on a long rest."
+										]
+									}
+								]
+                            },
+                            {
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Behaviours",
+										"entries": [
+                                            {
+                                                "type": "list",
+                                                "items": [
+                                                    "{@bold Sic:} The animal simply charges and attacks either the target you specify, or the nearest target if you don't specify. The creature may not necessarily realise when the enemy is dead and may keep attacking the corpse for a round or two to make certain. Unless Sic'd, the creature cannot make use of its multiattack feature.",
+                                                    "{@bold Protect:} The animal protects another friendly target of your choice, spending their actions to impose disadvantage on attacks made against their charge. If their charge suffers damage, they will use their reaction to interpose themselves, taking the damage in their stead. They may not realise when their charge is dead and will defend a corpse until such time as they do realise.",
+                                                    "{@bold Bail:} The animal keeps a creature 'pinned' by sheer virtue of intimidation. The creature must make a Wisdom Saving throw against your companion's Charisma ({@skill Intimidation}) skill. If they fail the save, they are {@condition frightened} of your animal companion until your companion stops this behaviour. Regardless of the result of the save, the companion will spend their turns mostly using the {@action Dash} action, trying to circle the quarry to prevent them from fleeing. If the quarry is not attempting (or cannot) flee, the animal uses the {@action Dodge} action instead.",
+                                                    "{@bold Flee:} The animal runs away, using {@action Dodge}, {@action Disengage}, {@action Dash} or {@Hide} as appropriate. They will only flee to a reasonable distance from you and will attempt to regroup at the first opportunity.",
+                                                    "{@bold Prowl:} The animal will stay hidden. If a friendly target suffers a critical hit or goes unconscious however, the animal is liable to lose patience and default to the Sic behaviour instead.",
+                                                    "{@bold Harry:} The animal will harry a target, nipping at their heels and otherwise hindering their movements. The companion spends their turns imposing disadvantage on the target's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) checks and halving their movement speed.",
+                                                    "{@bold Assist:} The animal will assist a friendly target with their actions, spending their turns using the {@action Help} action wherever they can. If aiding in attacks, the animal also gains the ability to use one of its attacks as a bonus action.",
+                                                    "{@bold Brace:} The animal is ordered to anticipate incoming damage, spending its turn using the {@action Dodge} action. While in this behaviour, when it successfully passes a saving throw and would take half damage, it takes no damage instead. If it fails a save, or it hit by an attack, it will use its reaction to reduce that damage by half. The animal may not realise that more damage isn't coming after the order is given and is likely to continue bracing for a hit that never comes."
+                                                ]
+                                            }
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Beast's Defence",
+										"entries": [
+                                            "At 7th level, your animal companions gain advantage to saving throws as long as they are within 30ft of you and can see or hear you.",
+                                            "In addition, your animal companions can channel touch range spells you cast provided they are within 30 ft. of you. An animal will not change its behaviour based on your spell casting however, and will not move in range of a potential target for the spell if the behaviour otherwise discourages doing so."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Bestial Wrath",
+										"entries": [
+                                            "At 11th level, your animal companions' attacks are treated as magical.",
+                                            "In addition, whenever you use a Poultice on yourself, your animal companions are healed by the same amount."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Share Magic",
+										"entries": [
+                                            "At 15th level, any spells beneficial or healing spells targeting you are also transferred to your animal companions. This effect also works in reverse.",
+                                            "In addition, as long as they can see or hear you, they can use their reaction to reduce the damage of a successful attack against them by half."
+										]
+									}
+								]
+							}
+                        ],
+                        [
+							{
+								"type": "entries",
+								"name": "Bondmate's Unity",
+								"entries": [
+									"At 20th level, you no longer are constrained by the use of coordination points, and can always use your reaction to change a companions' behaviour.",
+									"Your Animal Companion also gains an extra Ability Score Increase."
+								]
+							}
+						]
+					],
+					"source": "PHB",
+					"shortName": "Beast Master"
+                },
+                {
+					"name": "Hunter",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Hunter",
+								"entries": [
+									"Emulating the Hunter archetype means accepting your place as a bulwark between civilization and the terrors of the wilderness. As you walk the Hunter's path, you learn specialized techniques for fighting the threats you face, from rampaging ogres and hordes of orcs to towering giants and terrifying dragons.",
+                                    {
+                                        "type": "entries",
+                                        "name": "Trapper",
+                                        "entries": [
+                                            "At 3rd level, you can create and store up to your Wisdom Modifier (minimum 1) in Hunting Snares.",
+                                            "Snares function identically to {@item Hunting Trap|phb|Hunting Traps} in the PHB, except they are not reusable and are spent once triggered.",
+                                            "Both Hunting Snares, and {@item Hunting Trap|phb|Hunting Traps} may be used by you as a bonus action rather than an action. Their save DC is:",
+                                            "{@bold DC = 8 + Proficiency modifier + Wisdom modifier (Minimum 13 for {@item hunting trap|phb|hunting traps})}",
+                                            "The damage they deal adds your Wisdom modifier.",
+                                            "At 11th level, the damage of all traps and snares is treated as magical.",
+                                            "You rebuild new snares on a long rest."
+                                        ]
+                                    },
+                                    {
+										"type": "entries",
+										"name": "Hunter's Prey",
+										"entries": [
+											"At 3rd level, you gain the following actions.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Colossus Slayer",
+														"entries": [
+                                                            "Once per turn, you can deal an extra {@dice 1d8} weapon damage against a creature you attack that's its below hit point maximum."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Giant Killer",
+														"entries": [
+															"When a creature makes a melee attack against you, regardless if it hits or misses, you can use your reaction to make a weapon attack against it."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Horde Breaker",
+														"entries": [
+															"Once on each of your turns, you can make an extra attack against a different creature within 5 feet of the previous you attacked."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Defensive Tactics",
+										"entries": [
+											"At 7th level, you gain the following features.",
+                                            {
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Multiattack Defense",
+														"entries": [
+															"When a creature makes an attack against you, you gain +4 AC against that creature for subsequent attacks until end of turn."
+														]
+													}
+												]
+                                            },
+                                            {
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Steel Will",
+														"entries": [
+															"You have advantage on saving throws against being {@condition frightened} or {@condition charmed}."
+														]
+													}
+												]
+											},
+                                            {
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Escape the Horde",
+														"entries": [
+															"Opportunity attacks are made against you at disadvantage. You may use {@action Disengage} as a bonus action."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Multiattack",
+										"entries": [
+											"At 11th level, you gain the following features.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Volley",
+														"entries": [
+															"You may use your action to make a ranged attack against a creature, as well as any number of creatures within 15 ft. of them, provided you have enough ammunition to do so."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Whirlwind Attack",
+														"entries": [
+															"You may use your action to make melee attacks against any number of creatures within your melee weapon's reach. Roll a separate attack for each creature."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Superior Hunter's Defense",
+										"entries": [
+											"At 15th level, you gain the following features.",
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Evasion",
+														"entries": [
+															"Any effect that is resisted with a Dexterity saving throw only deals half damage if you fail. If the effect would do half damage on a success, it instead deals none."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Stand Against the Tide",
+														"entries": [
+															"When a creature misses an attack against you, you may force it to repeat that attack to another creature within 5 ft. of it."
+														]
+													}
+												]
+											},
+											{
+												"type": "entries",
+												"entries": [
+													{
+														"type": "entries",
+														"name": "Uncanny Dodge",
+														"entries": [
+															"When an attacker you can see hits you with an attack, you can spend your reaction to have it deal half damage instead."
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+                        ],
+                        [
+                            {
+                                "type": "entries",
+                                "name": "Unparalled Mastery",
+                                "entries": [
+                                    "At 20th level, you no longer have to prepare your creature types. All creatures are considered Favoured Enemies."
+                                ]
+                            }
+                        ]
+					],
+					"source": "PHB",
+					"shortName": "Hunter"
+				},
+				{
+					"name": "Gloom Stalker",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Gloom Stalker",
+								"entries": [
+									"Gloom Stalkers are at home in the darkest places: deep under the earth, in gloomy alleyways, in primeval forests, and wherever else the light dims. Most folk enter such places with trepidation, but a Gloom Stalker ventures boldly into the darkness, seeking to ambush threats before they can reach the broader world. Such rangers are often found in the Underdark, but they will go any place where evil lurks in the shadows.",
+									{
+										"type": "entries",
+										"name": "Gloom Stalker Magic",
+										"entries": [
+											"Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Gloom Stalker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
+											{
+												"type": "table",
+												"caption": "Gloom Stalker Spells",
+												"colLabels": [
+													"Ranger Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-3 text-center",
+													"col-9"
+												],
+												"rows": [
+													[
+														"3rd",
+														"{@spell disguise self}"
+													],
+													[
+														"5th",
+														"{@spell rope trick}"
+													],
+													[
+														"9th",
+														"{@spell fear}"
+													],
+													[
+														"13th",
+														"{@spell greater invisibility}"
+													],
+													[
+														"17th",
+														"{@spell seeming}"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Dread Ambusher",
+										"entries": [
+											"At 3rd level, you gain your Wisdom Modifier to Initiative checks.",
+                                            "On your first turn of combat, you gain 10 ft. of movement and an extra attack if you take the {@action Attack} action. If that attack hits, you deal an extra {@dice 1d8} damage of that weapon's type.",
+                                            "If you succeed a hide check on your turn, and remain hidden until the beginning of your next turn, you regain the usage of this feature.",
+                                            "If you are two-weapon fighting, you may make an off-hand attack in the same bonus action as you make a hide action."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Umbral Sight",
+										"entries": [
+											"You gain 60 ft. of darkvision. If you already have darkvision, it is instead extended by 30 ft.",
+											"In addition, you are {@condition invisible} to any creature relying on darkvision to see you."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Iron Mind",
+										"entries": [
+                                            "At 7th level, you become proficient in Wisdom saving throws. If you're already proficient, you gain proficiency in either Charisma or Intelligence saving throws (your choice).",
+                                            "In addition, you may add your Wisdom Modifier to Hide rolls."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Stalker's Flurry",
+										"entries": [
+											"At 11th level, once per turn, when you miss with a weapon attack, you may make another for free."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Shadowy Dodge",
+										"entries": [
+                                            "At 15th level, when an attack is made against you, you can spend your reaction to impose disadvantage against it.",
+                                            "If it has advantage on the roll, you instead remove that advantage."
+										]
+									}
+								]
+							}
+                        ],
+                        [
+                            {
+                                "type": "entries",
+                                "name": "Umbral Presence",
+                                "entries": [
+                                    "At 20th level your Dread Ambusher feature gives all your weapon attacks an extra {@dice 1d8} weapon damage, not just your first.",
+                                    "When you roll initiative, you gain an extra bonus action on your first turn of combat. Any spell cast during this extra bonus action does not consume a spell slot."
+                                ]
+                            }
+                        ]
+					],
+					"source": "XGE",
+					"shortName": "Gloom Stalker"
+				},
+				{
+					"name": "Horizon Walker",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Horizon Walker",
+								"entries": [
+									"Horizon Walkers guard the world against threats that originate from other planes or that seek to ravage the mortal realm with otherworldly magic. They seek out planar portals and keep watch over them, venturing to the Inner Planes and the Outer Planes as needed to pursue their foes. These rangers are also friends to any forces in the multiverse\u2014especially benevolent dragons, fey, and elementals\u2014that work to preserve life and the order of the planes.",
+									{
+										"type": "entries",
+										"name": "Horizon Walker Magic",
+										"entries": [
+											"Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Horizon Walker Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
+											{
+												"type": "table",
+												"caption": " Spells",
+												"colLabels": [
+													"Ranger Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-3 text-center",
+													"col-9"
+												],
+												"rows": [
+													[
+														"3rd",
+														"{@spell protection from evil and good}"
+													],
+													[
+														"5th",
+														"{@spell misty step}"
+													],
+													[
+														"9th",
+														"{@spell haste}"
+													],
+													[
+														"13th",
+														"{@spell banishment}"
+													],
+													[
+														"17th",
+														"{@spell teleportation circle}"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Detect Portal",
+										"entries": [
+											"At 3rd level you can use an action to detect the distance and direction of a planar portal within 1 mile of you.",
+											"You may only use this feature once per short or long rest."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Planar Warrior",
+										"entries": [
+											"Once per turn, you can mark a target within 30 ft. The first hit you make against that creature changes your weapon damage to force damage and adds {@dice 1d8} extra force damage to the roll.",
+											"At 11th level, this damage increases to {@dice 2d8}, and at 20th, this damage increases to {@dice 3d8}."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Ethereal Step",
+										"entries": [
+											"At 7th level, you can cast {@spell etherealness} on yourself without using a spell slot. This version of the spell ends at the end of your current turn.",
+											"You regain usage of this feature on a short or long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Distant Strike",
+										"entries": [
+											"At 11th level, when you take the {@action Attack} action, you may teleport 10 ft. before making each weapon attack. If you hit at least two separate targets using this feature, you may make another attack against a third creature."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Spectral Defense",
+										"entries": [
+											"At 15th level, when you take damage from an attack, you can spend your reaction to gain resistance to all damage types in that attack until the end of turn."
+										]
+									}
+								]
+							}
+                        ],
+                        [
+                            {
+                                "type": "entries",
+                                "name": "Planar Slipstream",
+                                "entries": [
+                                    "At 20th level, if you hit at least three seperate targets with your Distant Strike feature, you may make another attack against a fourth creature.",
+                                    "If a creature you marked with Planar Warrior dies during your attack action this turn, you may mark another creature.",
+                                    "In addition, your Distant Strike feature now allows you to teleport 15 feet before making each weapon attack."
+                                ]
+                            }
+                        ]
+					],
+					"source": "XGE",
+					"shortName": "Horizon Walker"
+				},
+				{
+					"name": "Monster Slayer",
+					"subclassFeatures": [
+						[
+							{
+								"name": "Monster Slayer",
+								"entries": [
+									"You have dedicated yourself to hunting down creatures of the night and wielders of grim magic. A Monster Slayer seeks out vampires, dragons, evil fey, fiends, and other magical threats. Trained in supernatural techniques to overcome such monsters, slayers are experts at unearthing and defeating mighty, mystical foes.",
+									{
+										"type": "entries",
+										"name": "Monster Slayer Magic",
+										"entries": [
+											"Starting at 3rd level, you learn an additional spell when you reach certain levels in this class, as shown in the Monster Slayer Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.",
+											{
+												"type": "table",
+												"caption": " Spells",
+												"colLabels": [
+													"Ranger Level",
+													"Spells"
+												],
+												"colStyles": [
+													"col-3 text-center",
+													"col-9"
+												],
+												"rows": [
+													[
+														"3rd",
+														"{@spell protection from evil and good}"
+													],
+													[
+														"5th",
+														"{@spell zone of truth}"
+													],
+													[
+														"9th",
+														"{@spell magic circle}"
+													],
+													[
+														"13th",
+														"{@spell banishment}"
+													],
+													[
+														"17th",
+														"{@spell hold monster}"
+													]
+												]
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Hunter's Sense",
+										"entries": [
+											"At 3rd level, as an action, you can learn damage immunities, resistances and vulnerabilities of a creature within 60 ft. If the creature is hidden from divination magic, you sense that it has none.",
+                                            "You may use this feature a number of times equal to your Wisdom Modifier (minimum 1).",
+                                            "You regain usage of this feature after a long rest."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Slayer's Prey",
+										"entries": [
+											"At 3rd level, as a bonus action, you can mark a creature within 60 ft. as prey.",
+                                            "Whenever you hit with a weapon attack, you deal {@dice 1d6} extra weapon damage.",
+                                            "The mark lasts until you finish a short or long rest, or until you designate another creature."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Supernatural Defense",
+										"entries": [
+											"At 7th level, you add an extra {@dice 1d6} towards any saving throws or checks to escape grapples from your marked prey."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Spellbreaker",
+										"entries": [
+											"At 11th level, you can spend your reaction to stop a creature casting a spell or teleporting within 60 ft. of you.",
+                                            "They must make a Wisdom saving throw against your spell save DC, failure preventing the spell or teleport and resources, charges or spell-slots used for it are expended.",
+                                            "You regain the use of this feature after a short or a long rest."
+										]
+									}
+								]
+							}
+						],
+						[
+							{
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Slayer's Counter",
+										"entries": [
+											"At 15th level, if your marked prey forces you to make a saving throw, you can use your reaction to make a weapon attack against it, immediately before making the save. If the attack hits, the save automatically succeeds in addition to any other effects."
+										]
+									}
+								]
+							}
+                        ],
+                        [
+                            {
+                                "type": "entries",
+                                "name": "Apex Predator",
+                                "entries": [
+                                    "At 20th level, when you use your Slayer's Prey feature, you may also choose to also gain the benefits of your Hunter's Sense feature without spending a full action for it.",
+                                    "Your Supernatural Defences feature now rolls {@dice 2d4} instead of {@dice 1d6} and adds that to the total.",
+                                    "Your Slayer's Counter feature adds your Foe Slayer to the attack."
+                                ]
+                            }
+                        ]
+					],
+					"source": "XGE",
+					"shortName": "Monster Slayer"
+				}
+			],
+			"fluff": [
+				{
+					"entries": [
+						"Rough and wild looking, a human stalks alone through the shadows of trees, hunting the orcs he knows are planning a raid on a nearby farm. Clutching a shortsword in each hand, he becomes a whirlwind of steel, cutting down one enemy after another.",
+						"After tumbling away from a cone of freezing air, an elf finds her feet and draws back her bow to loose an arrow at the white dragon. Shrugging off the wave of fear that emanates from the dragon like the cold of its breath, she sends one arrow after another to find the gaps between the dragon's thick scales.",
+						"Holding his hand high, a half-elf whistles to the hawk that circles high above him, calling the bird back to his side. Whispering instructions in Elvish, he points to the owlbear he's been tracking and sends the hawk to distract the creature while he readies his bow.",
+						"Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending watch.",
+						{
+							"type": "entries",
+							"name": "Deadly Hunters",
+							"entries": [
+								"Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of civilization\u2014humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and rubble. Rangers focus their combat training on techniques that are particularly useful against their specific favored foes.",
+								"Thanks to their familiarity with the wilds, rangers acquire the ability to cast spells that harness nature's power, much as a druid does. Their spells, like their combat abilities, emphasize speed, stealth, and the hunt. A ranger's talents and abilities are honed with deadly focus on the grim task of protecting the borderlands."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Independent Adventurers",
+							"entries": [
+								"Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger's true calling is to defend the outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the first\u2014and possibly the last\u2014line of defense.",
+								"This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the comforts of a dry bed and a hot bath. Faced with city-bred adventurers who grouse and whine about the hardships of the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that other adventurers who can carry their own weight in a fight against civilization's foes are worth any extra burden. Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in other ways."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Creating a Ranger",
+							"entries": [
+								"As you create your ranger character, consider the nature of the training that gave you your particular capabilities. Did you train with a single mentor, wandering the wilds together until you mastered the ranger's ways? Did you leave your apprenticeship, or was your mentor slain\u2014perhaps by the same kind of monster that became your favored enemy? Or perhaps you learned your skills as part of a band of rangers affiliated with a druidic circle, trained in mystic paths as well as wilderness lore. You might be self-taught, a recluse who learned combat skills, tracking, and even a magical connection to nature through the necessity of surviving in the wilds.",
+								"What's the source of your particular hatred of a certain kind of enemy? Did a monster kill someone you loved or destroy your home village? Or did you see too much of the destruction these monsters cause and commit yourself to reining in their depredations? Is your adventuring career a continuation of your work in protecting the borderlands, or a significant change? What made you join up with a band of adventurers? Do you find it challenging to teach new allies the ways of the wild, or do you welcome the relief from solitude that they offer?",
+								{
+									"type": "entries",
+									"name": "Quick Build",
+									"entries": [
+										"You can make a ranger quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. (Some rangers who focus on two-weapon fighting make Strength higher than Dexterity.) Second, choose the {@background outlander} background."
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB",
+					"page": 89
+				},
+				{
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"I spend a lot of my life away from civilization, keeping to its fringes to protect it. Don't assume that because I don't bend the knee to your king that I haven't done more to protect him than all his knights put together."
+							],
+							"by": "Soveliss"
+						},
+						"Rangers are free-minded wanderers and seekers who patrol the edges of civilized territory, turning back the denizens of the wild lands beyond. It is a thankless job, since their efforts are rarely understood and almost never rewarded. Yet rangers persist in their duties, never doubting that their work makes the world a safer place.",
+						"A relationship with civilization informs every ranger's personality and history. Some rangers see themselves as enforcers of the law and bringers of justice on civilization's frontier, answering to no sovereign power. Others are survivalists who eschew civilization altogether. They vanquish monsters to keep themselves safe while they live in and travel through the perilous wild areas of the world. If their efforts also benefit the kingdoms and other civilized realms that they avoid, so be it.",
+						"If you're creating or playing a ranger character, the following sections offer ideas for embellishing the character and enhancing your roleplaying experience.",
+						{
+							"type": "entries",
+							"name": "View of the World",
+							"entries": [
+								"A ranger's view of the world begins (and sometimes ends) with that character's outlook toward civilized folk and the places they occupy. Some rangers have an attitude toward civilization that's deeply rooted in disdain, while others pity the people they have sworn to protect\u2014though on the battlefield, it's impossible to tell the difference between one ranger and another. Indeed, to those who have seen them operate and been the beneficiaries of their prowess, it scarcely matters why rangers do what they do. That said, no two rangers are likely to express their opinions on any matter in the same way.",
+								"If you haven't yet thought about the details of your character's worldview, consider putting a finer point on things by summarizing that viewpoint in a short statement (such as the entries on the following table). How might that feeling affect the way you conduct yourself?",
+								{
+									"type": "table",
+									"caption": "View of the World",
+									"colLabels": [
+										"{@dice d6}",
+										"View"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"Towns and cities are the best places for those who can't survive on their own."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"The advancement of civilization is the best way to thwart chaos, but its reach must be monitored."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Towns and cities are a necessary evil, but once the wilderness is purged of supernatural threats, we will need them no more."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"Walls are for cowards, who huddle behind them while others do the work of making the world safe."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Visiting a town is not unpleasant, but after a few days I feel the irresistible call to return to the wild."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"Cities breed weakness by isolating folk from the harsh lessons of the wild."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Homelands",
+							"entries": [
+								"All rangers, regardless of how they came to take up the profession, have a strong connection to the natural world and its various terrains. For some rangers, the wilderness is where they grew up, either as a result of being born there or moving there at a young age. For other rangers, civilization was originally home, but the wilderness became a second homeland.",
+								"Think of your character's backstory and decide what terrain feels most like home, whether or not you were born there. What does that terrain say about your personality? Does it influence which spells you choose to learn? Have your experiences there shaped who your favored enemies are?",
+								{
+									"type": "table",
+									"caption": "Homelands",
+									"colLabels": [
+										"{@dice d6}",
+										"Homeland"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"You patrolled an ancient forest, darkened and corrupted by several crossings to the Shadowfell."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"As part of a group of nomads, you acquired the skills for surviving in the desert."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"Your early life in the Underdark prepared you for the challenges of combating its denizens."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"You dwelled on the edge of a swamp, in an area imperiled by land creatures as well as aquatic ones."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"Because you grew up among the peaks, finding the best path through the mountains is second nature to you."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"You wandered the far north, learning how to protect yourself and prosper in a realm overrun by ice."
+										]
+									]
+								}
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Sworn Enemy",
+							"entries": [
+								"Every ranger begins with a favored enemy (or two). The determination of a favored enemy might be tied to a specific event in the character's early life, or it might be entirely a matter of choice.",
+								"What spurred your character to select a particular enemy? Was the choice made because of tradition or curiosity, or do you have a grudge to settle?",
+								{
+									"type": "table",
+									"caption": "Sworn Enemies",
+									"colLabels": [
+										"{@dice d6}",
+										"Enemy"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"You seek revenge on nature's behalf for the great transgressions your foe has committed."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"Your forebears or predecessors fought these creatures, and so shall you."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"You bear no enmity toward your foe. You stalk such creatures as a hunter tracks down a wild animal."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"You find your foe fascinating, and you collect books of tales and history concerning it."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"You collect tokens of your fallen enemies to remind you of each kill."
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"You respect your chosen enemy, and you see your battles as a test of respective skills."
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 40,
+					"source": "XGE"
+				}
+			],
+			"page": 89
+		}
+	]
+}
