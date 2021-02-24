@@ -1,0 +1,1610 @@
+{
+	"$schema": "../schema.json",
+	"_meta": {
+		"sources": [
+			{
+				"json": "AmellwindsGuidetoMonsterHunting",
+				"abbreviation": "AGtMH",
+				"full": "Amellwind's Guide to Monster Hunting",
+				"authors": [
+					"/u/Amellwind"
+				],
+				"convertedBy": [
+					"gerads",
+					"Raziku"
+				],
+				"url": "https://www.gmbinder.com/share/-LCk9FgQaqaXBVmLeCeT",
+				"version": "2021.02.22"
+			}
+		],
+		"dateAdded": 1614050535,
+		"dateLastModified": 1614050535
+	},
+	"race": [
+		{
+			"name": "Lynian",
+			"source": "AmellwindsGuidetoMonsterHunting",
+			"ability": [
+				{
+					"dex": 2
+				}
+			],
+			"size": "S",
+			"darkvision": 60,
+			"entries": [
+				"Your lynian character has a variety of natural abilities, honed during their younger years.",
+				{
+					"name": "Age",
+					"entries": [
+						"It is currently unknown exactly how old the Lynian people live to be, but they seem to have the average lifespan of most feline species."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Lynians are between 2 and 3 feet tall and average about 35 pounds. Your size is Small."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"You have a cat's keen senses, especially in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Naturally Stealthy",
+					"entries": [
+						"You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Lynian, and one other language of their choice."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Lynians are sapient creatures, that are typically short of stature. There are currently three distinct groups of Lynian: the cat-like Felyne and Melynx, the lynx-like Grimalkyne and Boaboa, and the humanoid Shakalaka and Gajalaka, and the unique Uruki. The feline species are intelligent, have complex societies, and speak their own languages. Whereas the Shakalaka and Gajalaka are more primitive and tribal. The feline species tend to lead peaceful lives and often coexist with human society.",
+					"Many lynians are seen working in all sorts of human establishments or settlements. They've been seen being farmers, traders, adventurers, etc. Some lynians are known to assist hunters, and quite a few are independent \"Meownster Hunters\" in their own right."
+				]
+			},
+			"skillProficiencies": [
+				{
+					"intimidation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"lynian": true,
+					"other": 1
+				}
+			],
+			"subraces": [
+				{
+					"name": "Felyne",
+					"ability": [
+						{
+							"cha": 1
+						}
+					],
+					"speed": {
+						"walk": 30
+					},
+					"page": 37,
+					"entries": [
+						{
+							"name": "Alignment",
+							"entries": [
+								"Felynes are most often good. Those who lend toward law are found in villages working as adventurers, chefs, farmers, or traders. Those who tend toward chaos are from the wilderness and live off the land as scavengers and hunters. Felyne are good-hearted and even the tricksters among them are more playful than vicious."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Adaptive Fighter",
+							"entries": [
+								"You are proficient with improvised weapons."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Felyne Magic",
+							"entries": [
+								"You know the friends cantrip. When you reach 3rd level, you can cast the {@spell calm emotions} spell once per day. When you reach 5th level, you can also cast the {@spell suggestion} spell once per day. Charisma is your spellcasting ability for these spells."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Meowster Chef",
+							"entries": [
+								"You have proficiency with {@item cook’s utensils}."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Cultured",
+							"entries": [
+								"You have proficiency in the {@skill Persuasion} skill."
+							],
+							"type": "entries"
+						}
+					],
+					"traitTags": [
+						"Spellcasting",
+						"Skill Proficiency",
+						"Tool Proficiency",
+						"Weapon Proficiency"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"friends"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"calm emotions"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"suggestion"
+										]
+									}
+								}
+							},
+							"ability": "cha"
+						}
+					],
+					"skillProficiencies": [
+						{
+							"persuasion": true
+						}
+					],
+					"toolProficiencies": [
+						{
+							"cook's utensils": true
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Felynes are recognized by their white fur and have the ability to talk in human language, and can be found both in human villages and in the wild."
+						]
+					}
+				},
+				{
+					"name": "Melynx",
+					"ability": [
+						{
+							"int": 1
+						}
+					],
+					"speed": {
+						"walk": 30,
+						"climb": 20
+					},
+					"page": 37,
+					"entries": [
+						{
+							"name": "Alignment",
+							"entries": [
+								"Melynx tend toward chaotic alignments, as they let impulse curiosity, and mischievousness guide their decisions. Melynx that grow up in villages tend towards good, but those mistreated or those who grew up in the wilderness lean towards neutral or evil."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Cat's Claws",
+							"entries": [
+								"Because of your claws, you have a climbing speed of 20 feet. In addition, your claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Kleptomaniac",
+							"entries": [
+								"You have proficiency in the {@skill Sleight of Hand} skill. Additionally, you are able to determine the value of an object you have stolen,if you spend at least 1 hour inspecting or studying it without interruption. If the item is magical, you know its rarity, but not what its magical properties are."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Meowster Chef",
+							"entries": [
+								"You have proficiency with {@item cook’s utensils}."
+							],
+							"type": "entries"
+						}
+					],
+					"traitTags": [
+						"Unarmed Strike",
+						"Skill Proficiency",
+						"Tool Proficiency"
+					],
+					"skillProficiencies": [
+						{
+							"sleight of hand": true
+						}
+					],
+					"toolProficiencies": [
+						{
+							"cook's utensils": true
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Melynx are noted for their black fur and the ability to talk in human language, as well as do human activities like their fellow Lynian subspecies called the Felynes."
+						]
+					}
+				},
+				{
+					"name": "Shakalaka",
+					"ability": [
+						{
+							"str": 1
+						}
+					],
+					"speed": {
+						"walk": 25
+					},
+					"page": 38,
+					"entries": [
+						{
+							"name": "Alignment",
+							"entries": [
+								"Shakalaka are typically neutral evil, as they care only for their own needs. A few shakalaka might tend toward good or neutrality, but only rarely."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Aggressive",
+							"entries": [
+								"You pursue foes relentlessly, even at great risk to yourself. As a bonus action, you may move up to your speed towards a hostile creature you can see."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Mask of the Wild",
+							"entries": [
+								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Natural Athlete",
+							"entries": [
+								"You have proficiency in the {@skill Athletics} skill."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Shakalaka Weapon Training",
+							"entries": [
+								"You have proficiency with the {@item club}, {@item greatclub}, {@item morningstar} and {@item warhammer}."
+							],
+							"type": "entries"
+						}
+					],
+					"traitTags": [
+						"Skill Proficiency",
+						"Weapon Proficiency"
+					],
+					"skillProficiencies": [
+						{
+							"athletics": true
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Shakalaka are small, humanoid creatures with green skin. They wear a mask over their heads at all times, so their true faces are unknown."
+						]
+					}
+				},
+				{
+					"name": "Grimalkyne",
+					"ability": [
+						{
+							"wis": 1
+						}
+					],
+					"speed": {
+						"walk": 30
+					},
+					"page": 38,
+					"entries": [
+						{
+							"name": "Alignment",
+							"entries": [
+								"Most grimalkynes are good and rarely choose sides when it comes to law and chaos. Tribal leaders and warriors might be lawful, while explorers and adventurers might tend toward chaotic."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Keen Hearing",
+							"entries": [
+								"You have advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Tracker",
+							"entries": [
+								"You have proficiency in the {@skill Nature} and {@skill Survival} skills."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Grimalkyne Weapon Training",
+							"entries": [
+								"You have proficiency with the {@item glaive}, {@item javelin}, {@item net}, and {@item trident}."
+							],
+							"type": "entries"
+						}
+					],
+					"traitTags": [
+						"Skill Proficiency",
+						"Weapon Proficiency"
+					],
+					"skillProficiencies": [
+						{
+							"nature": true,
+							"survival": true
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Grimalkyne resembles bipedal lynxes. They have tufted ears, and come in a variety of colors depending on the tribe."
+						]
+					}
+				},
+				{
+					"name": "Gajalaka",
+					"ability": [
+						{
+							"con": 1
+						}
+					],
+					"speed": {
+						"walk": 25
+					},
+					"page": 38,
+					"entries": [
+						{
+							"name": "Alignment",
+							"entries": [
+								"Gajalaka are proud and barbaric, and are not strongly inclined toward good. They are slow to trust, but once someone gains the trust of a gajalaka, they are considered an ally for life, or until proven otherwise."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Herbalist",
+							"entries": [
+								"You have proficiency in the {@skill Nature} skill."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Tool Proficiency",
+							"entries": [
+								"You have proficiency with the {@item poisoner's kit}."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Tribal Mask",
+							"entries": [
+								"You have a red tribal mask that is accented by a color. Choose one color from the Tribal Mask table. Your gaja knife and your gajalaka tolerance is determined by the color of the mask's accents, as shown in the table.",
+								"Should this mask be destroyed, you can recreate a new one during a long or short rest, but the accent color cannot change.",
+								{
+									"type": "table",
+									"colLabels": [
+										"Accent Color",
+										"Condition",
+										"Duration"
+									],
+									"colStyles": [
+										"text-align-left",
+										"text-align-left",
+										"text-align-left"
+									],
+									"rows": [
+										[
+											"Blue",
+											"Blinded*",
+											"1 minute"
+										],
+										[
+											"Yellow",
+											"Stunned",
+											"Until the end of your next turn."
+										],
+										[
+											"Purple",
+											"Poisoned",
+											"1 minute"
+										]
+									],
+									"caption": "Tribal Mask Table"
+								},
+								"*A creature may repeat its saving throw for this condition at the end of each of its turns"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Gaja Knife",
+							"entries": [
+								"Your knife is coated with viscous liquid that is an opaque color, similar to the color of your mask's accents. You're proficient with this knife, and it has the finesse and thrown property, with a normal range of 20 and a long range of 40. When you hit with a weapon attack using it, the target takes {@dice 1d4} + your Dexterity modifier as piercing damage and they must make a Constitution saving throw.",
+								"The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. On a failed save, the creature is afflicted with the condition based on your mask's accent color and lasts for the duration listed in the Tribal Mask table.",
+								"After you hit a creature with this knife, it shatters. During a short or long rest, you can create a new gaja knife, but you can never carry more than one at a time."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Gajalaka Tolerance",
+							"entries": [
+								"You have advantage on saving throws against the condition associated with your tribal mask."
+							],
+							"type": "entries"
+						}
+					],
+					"traitTags": [
+						"Skill Proficiency",
+						"Tool Proficiency"
+					],
+					"skillProficiencies": [
+						{
+							"nature": true
+						}
+					],
+					"toolProficiencies": [
+						{
+							"poisoner's kit": true
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Gajalaka are short humanoids. They resemble Shakalaka more than Felynes or Grimalkynes, lacking any fur and wearing large tribal masks which leave only their bright yellow eyes visible. These red masks have different color accents, ranging from blue to yellow to purple, to represent what status ailment their weapons afflict. The Gajalaka in the Caverns of El Dorado have golden masks."
+						]
+					}
+				},
+				{
+					"name": "Boaboa",
+					"ability": [
+						{
+							"con": 1
+						}
+					],
+					"speed": {
+						"walk": 25
+					},
+					"page": 38,
+					"entries": [
+						{
+							"name": "Alignment",
+							"entries": [
+								"Boaboa tends toward neutrality, being more focused on survival than concepts of good and evil. A sense of community can drive boaboas toward lawful alignments."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Frost Resistance",
+							"entries": [
+								"You have resistance to cold damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Ice Walk",
+							"entries": [
+								"You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra moment."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Tribal Mask",
+							"entries": [
+								"You have a mask that is a crude imitation of a popo's head that has its tusks painted a color. Choose one color from the Popo Mask table. Your boa javelin and your boaboa tolerance is determined by the color of the mask's accents, as shown in the table.",
+								"Should this mask be destroyed, you can recreate a new one during a long or short rest, but the accent color cannot change.",
+								{
+									"type": "table",
+									"colLabels": [
+										"Accent Color",
+										"Condition",
+										"Duration"
+									],
+									"colStyles": [
+										"text-align-left",
+										"text-align-left",
+										"text-align-left"
+									],
+									"rows": [
+										[
+											"Blue",
+											"Blinded*",
+											"1 minute"
+										],
+										[
+											"Yellow",
+											"Stunned",
+											"Until the end of your next turn."
+										],
+										[
+											"Purple",
+											"Poisoned",
+											"1 minute"
+										]
+									],
+									"caption": "Tribal Mask Table"
+								},
+								"*A creature may repeat its saving throw for this condition at the end of each of its turns"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Boa Javelin",
+							"entries": [
+								"Your javelin tip is coated viscous liquid that is an opaque color, similar to the color of your mask's tusks. When you hit a creature with it, they take damage as normal, but they must also make a Constitution saving throw.",
+								"The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. On a failed save, the creature is afflicted with the condition based on your mask's accent color and lasts for the duration listed in the Popo Mask table.",
+								"After you hit a creature with this javelin, the javelin breaks. During a short or long rest, you can create a new javelin, but you can never carry more than one boa javelin at a time. "
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Boaboa Tolerance",
+							"entries": [
+								"You have advantage on saving throws against the condition associated with your tribal mask."
+							],
+							"type": "entries"
+						}
+					],
+					"resist": [
+						"cold"
+					],
+					"fluff": {
+						"entries": [
+							"The Boaboa have the basic shape of a Grimalkyne, but exhibit much thicker, white fur and a bulkier frame. They wear crude imitations of Popo heads as masks, with the tusk's tips painted in colours that correspond to the status ailment each individual Boaboa uses in combat."
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Troverian",
+			"source": "AmellwindsGuidetoMonsterHunting",
+			"page": 39,
+			"ability": [
+				{
+					"str": 2,
+					"con": 1
+				}
+			],
+			"size": "M",
+			"speed": {
+				"walk": 25
+			},
+			"darkvision": 60,
+			"traitTags": [
+				"Tool Proficiency",
+				"Spellcasting"
+			],
+			"entries": [
+				"Troverians resemble short, slightly stockier, and bulkier humans and are commonly mistaken for dwarves. Their skin usually tanned, Troverian males grow massive beards and moustaches, wearing them in odd but traditional shapes. Female Troverians lack facial hair all together, resembling human females with a smaller but sturdier frame.",
+				{
+					"name": "Age",
+					"entries": [
+						"Troverians mature at the same rate as humans but live a few years less."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Troverians care most of all about wanting to work. As such, they are usually neutral or chaotic good."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"Troverians stand between 4 and 5 feet tall and average about 150 pounds, similar to dwarves. Your size is Medium."
+					]
+				},
+				{
+					"name": "Artisan's Cunning",
+					"entries": [
+						"Whenever you make an Intelligence ({@skill History}) check related to the origin of metalwork or you make an Intelligence ({@skill Investigation}) to identify or locate ores, you are considered proficient in the skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Heart of Fire",
+					"entries": [
+						"You have resistance to fire damage."
+					]
+				},
+				{
+					"name": "Troverian Magic",
+					"entries": [
+						"You know the {@spell mold earth} cantrip. When you reach 3rd level, you can cast the {@spell heat metal} spell once per day. Wisdom is your spellcasting ability for these spells."
+					]
+				},
+				{
+					"name": "Troverian Weapon Training",
+					"entries": [
+						"You have proficiency with the {@item greataxe}, {@item lance}, and {@item maul}."
+					]
+				},
+				{
+					"name": "Tool Proficiency",
+					"entries": [
+						"You have proficiency with {@item smith's tools} and {@item mason's tools}."
+					]
+				},
+				{
+					"name": "Workaholic",
+					"entries": [
+						"When crafting an item (XGtE p.128) as your downtime activity, you divide the gold piece cost of the item by 200 to determine the amount of workweeks it takes to craft it. You can complete multiple items in a workweek if the items' combined cost is 200 gp or lower."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Dwarvish, and Troverian."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Troverians are an industrious dwarf-like people who coexist with the dwarves in the village of Harth. Troverians are known to prefer living in underground areas, due to them using the many ores and minerals in the areas to produce equipment such as armour and weapons. Some troverian tribes have special ways to polish old equipment found in the field by hunters. This race is said to be \"workaholics\" due to them working for long periods. It's been said they can continue work day and night to produce such equipment without a need to sleep until their work is finished. Many of the troverian's clothes allow them to continue working without much problem, while also acting as their usual attire."
+				]
+			},
+			"resist": [
+				"fire"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"1": [
+							"mold earth"
+						],
+						"3": {
+							"daily": {
+								"1": [
+									"heat metal"
+								]
+							}
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"toolProficiencies": [
+				{
+					"smith's tools": true,
+					"mason's tools": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true,
+					"troverian": true
+				}
+			]
+		},
+		{
+			"name": "Wyverian",
+			"source": "AmellwindsGuidetoMonsterHunting",
+			"page": 40,
+			"ability": [
+				{
+					"int": 2
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"size": "M",
+			"entries": [
+				{
+					"name": "Age",
+					"entries": [
+						"Although wyverians reach physical maturity at about the same age as humans, the wyverian understanding of adulthood goes beyond physical growth to encompass worldly experience. A wyverian typically reaches adulthood around the age of 80 and can typically live to be 1000 years old."
+					]
+				},
+				{
+					"name": "Size",
+					"entries": [
+						"The average Wyverians grow to the size of a human, but shrink to about 4 feet tall as their old age begins to set in. Your size is Medium."
+					]
+				},
+				{
+					"name": "Alignment",
+					"entries": [
+						"Wyverians are most often good. Those who tend towards law are hunters, researchers, scholars, investigators, and soldiers. Those who tend toward chaos are hermits, sages, wanderers, and tend to prefer nature to civilization, but understand the need of both."
+					]
+				},
+				{
+					"name": "Expert",
+					"entries": [
+						"Choose one creature type. Whenever you make an Intelligence (History) check related to recall information about a creature of that type, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
+					]
+				},
+				{
+					"name": "Inquisitive",
+					"entries": [
+						"You have proficiency in the {@skill Investigation} skill."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common, Draconic, and Wyverian."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Wyverians superficially resemble humans, but they have several traits that suggest a wyvern ancestry. They have pointed ears, four-fingered hands, and an increased lifespan. Many, though not all , Wyverians also possess digitigrade legs.",
+					{
+						"type": "entries",
+						"name": "A Wyverian's Thinking",
+						"entries": [
+							"Wyverians think differently than most races, perhaps in part due to their increased lifespan, and are often considered more intelligent and rational. Some Wyverians have an extensive education, more than most races can learn in a feasible timespan, and are versed in multiple subjects. They are also more attuned to nature, which they greatly respect. They are peaceful and prefer to avoid conflict if possible, but still, recognize the value of Hunters. In fact, they were the first Hunters, but eventually gave way to the Hunter's Guild and transitioned into a supporting role. There are very few Wyverian Hunters today and are considered rarities. Wyverian humor is strange by human standards."
+						]
+					}
+				]
+			},
+			"skillProficiencies": [
+				{
+					"investigation": true
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true,
+					"wyverian": true
+				}
+			],
+			"subraces": [
+				{
+					"name": "Modern",
+					"ability": [
+						{
+							"choose": {
+								"from": [
+									"str",
+									"dex"
+								],
+								"count": 1
+							}
+						}
+					],
+					"entries": [
+						{
+							"name": "Modern Magic",
+							"entries": [
+								"You know the {@spell create bonfire} cantrip. When you reach 3rd level, you can cast the {@spell enlarge/reduce} spell once per day. When you reach 5th level, you can also cast the {@spell Blindness/Deafness} spell once per day. Intelligence is your spellcasting ability for these spells."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Tool Proficiency",
+							"entries": [
+								"You have proficiency in two {@item artisan's tools} of your choice"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Wyverian Weapon Training.",
+							"entries": [
+								"You have proficiency with two martial weapons of your choice."
+							],
+							"type": "entries"
+						}
+					],
+					"traitTags": [
+						"Spellcasting",
+						"Skill Proficiency",
+						"Tool Proficiency",
+						"Weapon Proficiency"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"create bonfire"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"enlarge/reduce"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"blindness/deafness"
+										]
+									}
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"toolProficiencies": [
+						{
+							"choose": {
+								"from": [
+									"alchemist's supplies",
+									"brewer's supplies",
+									"calligrapher's supplies",
+									"carpenter's tools",
+									"cartographer's tools",
+									"cobbler's tools",
+									"cook's utensils",
+									"glassblower's tools",
+									"jeweler's tools",
+									"leatherworker's tools",
+									"mason's tools",
+									"painter's supplies",
+									"potter's tools",
+									"smith's tools",
+									"tinker's tools",
+									"weaver's tools",
+									"woodcarver's tools"
+								],
+								"count": 2
+							}
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Modern wyverians peacefully coexist with humans and often live among them, especially older modern wyverians, past their prime. Younger Wyverians are known to travel far and wide, often accompanying humans. Modern wyverians are usually between 20 and 200 years old."
+						]
+					}
+				},
+				{
+					"name": "Ancient",
+					"ability": [
+						{
+							"con": 1
+						}
+					],
+					"entries": [
+						{
+							"name": "Ancient Magic",
+							"entries": [
+								"You know the {@spell druidcraft} cantrip. When you reach 3rd level, you can cast the {@spell barkskin} spell once per day. When you reach 5th level, you can also cast the {@spell earthbind} spell once per day. Intelligence is your spellcasting ability for these spells. "
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Kit Proficiency",
+							"entries": [
+								"You gain proficiency with the kit of your choice: {@item herbalism kit} or {@item poisoner's kit}."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Mask of the Wild.",
+							"entries": [
+								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Survivor",
+							"entries": [
+								"You have proficiency in the {@skill Survival} skill."
+							],
+							"type": "entries"
+						}
+					],
+					"traitTags": [
+						"Spellcasting",
+						"Skill Proficiency",
+						"Tool Proficiency",
+						"Weapon Proficiency"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"druidcraft"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"barkskin"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"earthbind"
+										]
+									}
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"toolProficiencies": [
+						{
+							"choose": {
+								"from": [
+									"herbalism kit",
+									"poisoner's kit"
+								],
+								"count": 1
+							}
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Ancient wyverian are the wyverian who survived the Great Dragon War and may even remember the time of the ancient civilization. They are small in stature, sometimes a bit stubborn, but always seek to help those lost in the world. Ancient wyverians are usually between 600 and 1000 years old."
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Elder Dragonborn",
+			"source": "AmellwindsGuidetoMonsterHunting",
+			"page": 34,
+			"srd": true,
+			"size": "M",
+			"speed": 30,
+			"heightAndWeight": {
+				"baseHeight": 66,
+				"heightMod": "2d8",
+				"baseWeight": 175,
+				"weightMod": "2d6"
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "races/dragonborn.mp3"
+			},
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Young dragonborn grow quickly. They walk hours after hatching, attain the size and development of a 10-year-old human child by the age of 3, and reach adulthood by 15. They live to be around 80."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Dragonborn tend to extremes, making a conscious choice for one side or the other in the cosmic war between good and evil (represented by Bahamut and Tiamat, respectively). Most dragonborn are good, but those who side with Tiamat can be terrible villains."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Dragonborn are taller and heavier than humans, standing well over 6 feet tall and averaging almost 250 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic. Draconic is thought to be one of the oldest languages and is often used in the study of magic. The language sounds harsh to most other creatures and includes numerous hard consonants and sibilants."
+					],
+					"type": "entries"
+				}
+			],
+			"subraces": [
+				{
+					"name": "Amatsu",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"wis": 2,
+							"dex": 1
+						}
+					],
+					"page": 34,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to radiant damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Elder Dragon Magic",
+							"entries": [
+								"You know the {@spell gust} cantrip. When you reach 3rd level, you can cast the {@spell thunderwave} spell once, and it recharges after a long rest. When you reach 5th level, you can also cast the {@spell levitate} spell once, and it recharges after a long rest. Wisdom is your spellcasting ability for these spells."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Glide",
+							"entries": [
+								"You always hover one to two inches off the ground. Moving through nonmagical difficult terrain costs you no extra movement"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Wind Barrier",
+							"entries": [
+								"You can use an action to summon a barrier of wind around you for 1 minute. While the barrier is active, you have half cover against range attacks, resistance to nonmagical ammunition, and disperse any fog like effect in a 5-foot radius around you. Once used, you can't use this trait again until you finish a long rest."
+							],
+							"type": "entries"
+						}
+					],
+					"resist": [
+						"radiant"
+					],
+					"traitTags": [
+						"Damage Resistance",
+						"Spellcasting"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"gust"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"thunderwave"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"levitate"
+										]
+									}
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Amatsumagatsuchi dragonborn's head is adorned with large golden horns. Their scales are largely pale white and fins that stretch across all four limbs and back.",
+							"Many of them are known to wear long flowing clothing, as a representation of amatsumagatsuchi's webbing,",
+							"while others use it as a means to hide the fact that their feet never touch the ground."
+						]
+					}
+				},
+				{
+					"name": "Chameleos",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"wis": 2,
+							"dex": 1
+						}
+					],
+					"page": 34,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to poison damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Elder Dragon Magic",
+							"entries": [
+								"You know the {@spell poison spray} cantrip. When you reach 3rd level, you can cast the {@spell fog cloud} spell once, and it recharges after a long rest. When you reach 5th level, you can also cast the {@spell misty step} spell once, and it recharges after a long rest. Wisdom is your spellcasting ability for these spells."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Hidden Step",
+							"entries": [
+								"As a bonus action, you can magically turn invisible until the start of your next turn or until you attack, make a damage roll, or force someone to make a saving throw. Once you use this trait, you can't use it again until you finish a short or long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Mask of the Wild",
+							"entries": [
+								"You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+							],
+							"type": "entries"
+						}
+		
+		
+					],
+					
+					"traitTags": [
+						"Damage Resistance",
+						"Spellcasting"
+					],
+					"resist": [
+						"poison"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"poison spray"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"fog cloud"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"misty step"
+										]
+									}
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"fluff": {
+						"entries": [
+							"Chameleos dragonborn scales are purple, though their limbs and stomach are bare, showing off-white skin.",
+							"They have long, elastic tongues, but unlike the Chameleos, the dragonborn's eyes do not resemble a chameleon's in shape.",
+							"Instead, their iris and pupil simulate the look"
+						]
+					}
+				},
+				{
+					"name": "Dalamadur",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"str": 2,
+							"cha": 1
+						}
+					],
+					"page": 34,
+					"entries": [
+						{
+							"name": "Speed",
+							"entries": [
+								"Your base walking speed is 30 feet, and you have a climbing speed of 30 feet."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Dalamadur Ancestry",
+							"entries": [
+								"You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Elder Dragon Magic",
+							"entries": [
+								"You know the {@spell firebolt} cantrip. When you reach 3rd level, you can cast the {@spell charm person} spell once, and it recharges after a long rest. When you reach 5th level, you can also cast the {@spell melf's minute meteors} spell once, and it recharges after a long rest. Charisma is your spellcasting ability for these spells."
+							],
+							"type": "entries"
+						}
+		
+		
+					],
+					
+					"traitTags": [
+						"Spellcasting"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"firebolt"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"charm person"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"melf's minute meteors"
+										]
+									}
+								}
+							},
+							"ability": "cha"
+						}
+					],
+					"speed": {
+						"walk": 30,
+						"climb": 30
+					},
+					"fluff": {
+						"entries": [
+							"Dalamadur dragonborn have a snake-like face, with bright red eyes, numerous fangs.",
+							"Their body is covered in thick black and gray scales with many hook-like spikes along their body which start out clustered around their head and neck.",
+							" When angered, their face and chest will glow red."
+						]
+					}
+				},
+				{
+					"name": "Fatalis",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"str": 2,
+							"cha": 1
+						}
+					],
+					"page": 34,
+					"entries": [
+						{
+							"name": "Elder Ancestry",
+							"entries": [
+								"You have advantage on saving throws against being charmed and frightened."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Shifting Scales",
+							"entries": [
+								"Your scales change color daily. This determines your draconic resistance and breath weapon for the day. Each day at dawn, roll a d3 and refer to the table below to determine your scale's color.",
+								{
+									"type": "table",
+									"colLabels": [
+										"d3",
+										"Color",
+										"Draconic Resistance",
+										"Breath Weapon"
+									],
+									"colStyles": [
+										"text-align-left",
+										"text-align-left",
+										"text-align-left",
+										"text-align-left"
+									],
+									"rows": [
+										[
+											"1",
+											"Black",
+											"Necrotic",
+											"Black Fire(Dex. save)"
+										],
+										[
+											"2",
+											"Red",
+											"Fire",
+											"Crimson Demons Breath(Dex. save)"
+										],
+										[
+											"3",
+											"White",
+											"Lightning",
+											"Emperor's Roar(Dex. save)"
+										]
+									],
+									"caption": "Shifting Scales Table"
+								}
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Breath Weapon",
+							"entries": [
+								"You can use your action to exhale destructive energy. Your draconic ancestry determines the size, shape, and damage type of the exhalation.",
+								"When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes {@dice 2d6} damage on a failed save, and half as much damage on a successful one. The damage increases to {@dice 3d6} at 6th level, {@dice 4d6} at 11th level, and {@dice 5d6} at 16th level.",
+								"After you use your breath weapon, you can't use it again until you complete a short or long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Black Fire",
+							"entries": [
+								"When you use your breath weapon, you exhale black flames in a 15-foot cone. The damage dealt by this breath weapon is half necrotic and half fire. If the damage die is odd, the last die is dealt as necrotic damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Crimson Demon's Breath",
+							"entries": [
+								"When you use your breath weapon, you exhale black flames in a 5 by 30-foot line. The damage dealt by this breath weapon is half necrotic and half fire. If the damage die is odd, the last die is dealt as fire damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Emperor's Roar",
+							"entries": [
+								"When you use your breath weapon, you let out a cacophonous roar, calling down red lightning that strikes down in a 5-foot radius around you. The damage dealt by this breath weapon is lightning damage."
+							],
+							"type": "entries"
+						}
+					],
+					
+					"traitTags": [
+						"Damage Resistance",
+						"Spellcasting"
+					],
+					"fluff": {
+						"entries": [
+							"Fatalis dragonborn look similar to a regular dragonborn, except each day their scales change color.", 
+							"Fatalis dragonborn that live within society tend to only show themselves when they are one color, or cover themselves almost entirely.",
+							"Outcasts or those who lean more towards evil, proudly show their heritage at all times."
+						]
+					}
+				},
+				{
+					"name": "Kirin",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"dex": 1,
+							"int": 1,
+							"cha": 1
+						}
+					],
+					"page": 35,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to lightning damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Elder Dragon Magic",
+							"entries": [
+								"You know the {@spell thaumaturgy} cantrip. When you reach 3rd level, you can cast the {@spell thunderwave} spell once, and it recharges after a long rest. When you reach 5th level, you can also cast the {@spell shatter} spell once, and it recharges after a long rest. Intelligence is your spellcasting ability for these spells."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Control Lightning",
+							"entries": [
+								"Whenever you cast a spell that deals lightning or thunder damage, you can cast it as if you were in a space within 15 feet of your actual location."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							],
+							"type": "entries"
+						}
+		
+		
+					],
+					
+					"traitTags": [
+						"Damage Resistance",
+						"Spellcasting"
+					],
+					"resist": [
+						"lightning"
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"Thaumaturgy"
+								],
+								"3": {
+									"daily": {
+										"1": [
+											"thunderwave"
+										]
+									}
+								},
+								"5": {
+									"daily": {
+										"1": [
+											"shatter"
+										]
+									}
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"fluff": {
+						"entries": [
+							"The kirin dragonborn are the fairest dragonborns, whose beauty is often compared to that of the elves.",
+							"Their bodies are sleek and slender, covered by fine white and dark cyan scales.",
+							"The most prominent feature is their ability to grow majestic white hair that stands on end, as if charged with static when they get angry"
+						]
+					}
+				},
+				{
+					"name": "Kulve Taroth",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"cha": 2,
+							"con": 1
+						}
+					],
+					"page": 35,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to fire damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Glorius Dragonborn",
+							"entries": [
+								"You gain proficiency in the Persuasion skill."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Matallic Coat",
+							"entries": [
+								"As part of a long rest, you can produce apowerful magnetic force that attracts metals and minerals from the ground to your body and melt them with your high body temperature before letting it cool on your body, forming a metal coat. While wearing this metallic coat, your AC is 17, but your movement speed is reduced by 5 feet.",
+								"As an action you can shed the coat by entering a super heated state. Your super heated state lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your level."
+							],
+							"type": "entries"
+						}
+		
+		
+					],
+					
+					"traitTags": [
+						"Natural Armor",
+						"Damage Resistance"
+					],
+					"skillProficiencies": [
+						{
+							"persuasion": true
+						}
+					],
+					"resist": [
+						"fire"
+					],
+					"fluff": {
+						"entries": [
+							"Kulve taroth dragonborn are slim and muscular with dark blue and golden scales covered by a metallic mantle (typically gold).",
+							"They have large spiraling horns that resemble lapis lazuli, when they aren't covered in gold plating."
+						]
+					}
+				},
+				{
+					"name": "Kushala Daora",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"str": 1,
+							"con": 1,
+							"int": 1
+						}
+					],
+					"page": 35,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to thunder damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Acclimated",
+							"entries": [
+								"You’re acclimated to high altitude, including elevations above 20,000 feet. You’re also naturally adapted to cold climates."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Natural Armor",
+							"entries": [
+								"Due to the constant oxidation of your metal scales, any armor you wear rusts rapidly. Your scales provide ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Wind Barrier",
+							"entries": [
+								"Due to the constant oxidation of your metal scales, any armor you wear rusts rapidly. Your scales provide ample protection, however; it gives you a base AC of 17 (your Dexterity modifier doesn't affect this number). You gain no benefit from wearing armor, but if you are using a shield, you can apply the shield's bonus as normal."
+							],
+							"type": "entries"
+						}
+		
+		
+					],
+					"resist": [
+						"thunder"
+					],
+					"traitTags": [
+						"Natural Armor",
+						"Damage Resistance"
+					],
+					"fluff": {
+						"entries": [
+							"Recognized by their two backward curving horns that blend in with the spikes lining their back and their organic metallic scales, the kushala dragonborn are steel willed defenders. Their mantra is \"a cracked scale will lead to a dragon's downfall\". So they train themselves and others to the best of their ability, to protect their beliefs.",
+							"The Kushala dragonborn scales are almost a pristine silver when they are born and begin to oxidize, darkening and rusting, as they age. To counteract the rust, the dragonborn molts as it grows, like a snake, shedding its old scales and beginning the process anew. Until their elder years when their molting ceases and they slowly turn the orange-red brown color of rust over the entirety of their body."
+						]
+					}
+				}
+			]
+		}
+	]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
