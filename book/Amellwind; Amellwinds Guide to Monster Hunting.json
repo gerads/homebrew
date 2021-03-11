@@ -1013,6 +1013,85 @@
 			],
 			"subraces": [
 				{
+					"name": "Alatreon",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"str": 2
+						},
+						{
+							"choose": {
+								"from": [
+									"cha",
+									"int",
+									"wis"
+								],
+								"count": 1
+							}
+						}
+					],
+					"page": 34,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to one of the following damage types: cold, fire, necrotic."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Elemental Affinity",
+							"entries": [
+								"When you deal cold, fire, lightning, or necrotic damage, you can add your Intelligence, Wisdom, or Charisma modifier to the damage. You can use this trait a number of times equal to your proficiency bonus. You regain all expended uses when you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Menacing",
+							"entries": [
+								"You have advantage on saving throws against being frightened, and you gain proficiency in the Intimidation skill.a"
+							],
+							"type": "entries"
+						}
+						
+					],
+					"skillProficiencies": [
+						{
+							"intimidation": true
+						}
+					],
+					"resist": [
+						{
+							"choose": {
+								"from": [
+									"cold",
+									"fire",
+									"necrotic"
+								],
+								"count": 1
+							}
+						}
+					],
+					"traitTags": [
+						"Damage Resistance"
+					],
+					"fluff": {
+						"entries": [
+							"The alatreon dragonborn personality is matched only by its ability to harness the elements.",
+							"They more often prefer to live in solitude, but are known to work with others or insert themselves into a situation when it benefits them.",
+							"Their bodies are covered in reverse scales that they use to control the cold, fire, lightning, or necrotic elements.",
+							"Atop of the alatreon dragonborn head are two large horns that act as a conduit for their elemental powers."
+						]
+					}
+				},
+				{
 					"name": "Amatsu",
 					"source": "AmellwindsGuidetoMonsterHunting",
 					"ability": [
@@ -1560,6 +1639,558 @@
 						"entries": [
 							"Recognized by their two backward curving horns that blend in with the spikes lining their back and their organic metallic scales, the kushala dragonborn are steel willed defenders. Their mantra is \"a cracked scale will lead to a dragon's downfall\". So they train themselves and others to the best of their ability, to protect their beliefs.",
 							"The Kushala dragonborn scales are almost a pristine silver when they are born and begin to oxidize, darkening and rusting, as they age. To counteract the rust, the dragonborn molts as it grows, like a snake, shedding its old scales and beginning the process anew. Until their elder years when their molting ceases and they slowly turn the orange-red brown color of rust over the entirety of their body."
+						]
+					}
+				},
+				{
+					"name": "Nakarkos",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"con": 2,
+							"wis": 1
+						}
+					],
+					"page": 36,
+					"entries": [
+						{
+							"name": "Amphibious",
+							"entries": [
+								"You can breathe air and water."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to fire damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Bone Armor",
+							"entries": [
+								" As part of a short rest or long rest, you can harvest the bones from a slain creature of size Small or larger and adhere them to your body, gaining a number of temporary hit points equal to 1/2 the creature's CR. To use this trait, you need a blade, such as a dagger, or appropriate artisan's tools, such as woodcarver's tools."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Nakarkos Beams",
+							"entries": [
+								"From your hands you fire two 5 by 15 foot lines of draconic energy that deal necrotic damage (Con. save). A creature in the line of more than one beam is affected only once. The damage and save DCs are the same as a dragonborn's breath weapon. After using your nakarkos beams, you cannot use them again until you complete a short or long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Sticky Mucus",
+							"entries": [
+								"You secrete a sticky liquor through your skin. You have advantage on Strength (Athletics) checks to climb, grapple, or prevent yourself from being disarmed; but you also have disadvantage when attempting to escape a grapple."
+							],
+							"type": "entries"
+						}
+		
+		
+					],
+					"speed": {
+						"walk": 30,
+						"swim": 30
+					},
+					"resist": [
+						"fire"
+					],
+					"traitTags": [
+						"Natural Armor",
+						"Damage Resistance"
+					],
+					"fluff": {
+						"entries": [
+							"Dragonborn only by name and silhouette, the nakarkos dragonborn are actually cephalopod-like humanoids.",
+							"They have glowing yellow eyes and blue skin with spots of turquoise bioluminescence.",
+							"The nakarkos dragonborn are able to secrete a sticky mucus from their pores, using it to adhere the bones of slain creatures to their body."
+						]
+					}
+				},
+				{
+					"name": "Namielle",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"con": 2,
+							"dex": 1
+						}
+					],
+					"page": 36,
+					"entries": [
+						{
+							"name": "Amphibious",
+							"entries": [
+								"You can breathe air and water."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to your choice of one of the following damage types: cold damage or lightning damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Waterbending",
+							"entries": [
+								"You know the {@spell shape water} cantrip."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Breath Weapon",
+							"entries": [
+								"Your breath weapon is a 5 by 30 foot line (Con. save) that deals cold damage."
+							],
+							"type": "entries"
+						}
+					],
+					"speed": {
+						"walk": 30,
+						"swim": 30
+					},
+					"resist": [
+						{
+							"choose": {
+								"from": [
+									"cold",
+									"lightning"
+								],
+								"count": 1
+							}
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": [
+									"shape water"
+								]
+							},
+							"ability": "wis"
+						}
+					],
+					"traitTags": [
+						"Spellcasting",
+						"Damage Resistance"
+					],
+					"fluff": {
+						"entries": [
+							"Namielle dragonborn have large needle-shaped teeth, like a deep-sea fish, and may have multiple long whiskers that resemble jellyfish-like tendrils.",
+							"Normally their body is colored black and a deep sea blue, accented by a vibrant red while parts of their face and limbs glow with a bioluminescent light that pulses with the colors of the rainbow.",
+							"When they haven't spent time in the rain or in water, their scales dry out changing to a milky tan coloring."
+						]
+					}
+				},
+				{
+					"name": "Nergigante",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"str": 2,
+							"con": 1
+						}
+					],
+					"page": 36,
+					"entries": [
+						{
+							"name": "Horns",
+							"entries": [
+								"Your horns are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal bludgeoning damage equal to 1d6 + your Strength modifier."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Indurate Spikes",
+							"entries": [
+								"You can cast {@spell shield of faith} with this trait, but only target yourself. When you use this version of shield of faith, you have advantage on Constitution saving throws to maintain concentration on this spell. Once you cast this spell, you can't cast it again with this trait until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Menacing",
+							"entries": [
+								"You have proficiency in the Intimidation skills."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Natural Armor",
+							"entries": [
+								"You have tough, scaly skin. When you aren't wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield's benefits apply as normal while you use your natural armor."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Spiked Regrowth",
+							"entries": [
+								"As an action, you can regain a number of hit points equal to your level + your Constitution modifier. Once you use this trait, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						}
+					],
+					"skillProficiencies": [
+						{
+							"intimidation": true
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"1": {
+									"daily": {
+										"1": [
+											"shield of faith"
+										]
+									}
+								}
+							},
+							"ability": "con"
+						}
+					],
+					"traitTags": [
+						"Spellcasting",
+						"Natural Armor"
+					],
+					"fluff": {
+						"entries": [
+							"Nergigante dragonborn have a bristly appearance. Much like their elder dragon brethren, their scales are black with purple and orange accents and sport two bulbous horns atop their head.",
+							"The regenerative properties of the nergigante still flow in the blood of this elder dragonborn, though at a much slower rate. Taking hours to regrow their spikes instead of seconds."
+						]
+					}
+				},
+				{
+					"name": "Shara Ishvalda",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"wis": 2,
+							"str": 1
+						}
+					],
+					"page": 37,
+					"entries": [
+						{
+							"name": "Breath Weapon",
+							"entries": [
+								"Your breath weapon deals thunder damage in a 5-foot wide by 30-foot long line (CON save)."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to thunder damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Perceptive",
+							"entries": [
+								"You gain proficiency in the Perception skill."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Stone Shell",
+							"entries": [
+								"As an action, you gain 1d4 + 4 temporary hit points for 1 hour. At 3rd level you gain an additional 5 temporary hit points. Once you use this trait, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						}
+					],
+					"skillProficiencies": [
+						{
+							"perception": true
+						}
+					],
+					"resist": [
+						"thunder"
+					],
+					"traitTags": [
+						"Damage Resistance",
+						"Natural Armor"
+					],
+					"fluff": {
+						"entries": [
+							"The shara ishvalda dragonborn are as mysterious as the elder dragon they share their lineage with.",
+							"The dragonborn from this ancestry share a strange trait in which they always seem to be endlessly gazing at something that's just right past you.",
+							"Although this gaze never meets your eyes, one can’t help but feel they're looking at the real you.",
+							"Their bodies are lithe and athletic, boasting a variety of bright colors, mainly yellows, purples, and white.",
+							"They are known to manipulate the earth to surround their body, using their innate ability to control vibration, though they are not as skilled as their elder dragon ancestors."
+						]
+					}
+				},
+				{
+					"name": "Vaal Hazak",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"con": 2,
+							"wis": 1
+						}
+					],
+					"page": 37,
+					"entries": [
+						{
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Draconic Resilience",
+							"entries": [
+								"You have advantage on saving throws against disease, and you have resistance against acid damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Effluvium Aura",
+							"entries": [
+								"Starting at 3rd level, you can use your action to unleash effluvium stored within yourself, causing miasma to emanate in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. When a creature starts its turn in the effluvium or enters it for the first time on a turn, that creature takes 2 (1d4) acid damage. The damage increases to 1d6 at 7th level, 1d8 at 11th, and 1d10 at 16th level. Once you use this trait, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Effluvium Magic",
+							"entries": [
+								"When you reach 5th level, you can cast the {@spell bestow curse} spell once, and it recharges after a long rest. wisdom is your spellcasting ability for these spells. If the nature of the curse targets one of the creature's Ability Score, you have advantage on Constitution saving throws to maintain concentration on the spell and the spell acts as if it was casted as a 4th-level spell."
+							],
+							"type": "entries"
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"5": {
+									"daily": {
+										"1": [
+											"bestow curse"
+										]
+									}
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"resist": [
+						"acid"
+					],
+					"traitTags": [
+						"Damage Resistance",
+						"Spellcasting"
+					],
+					"fluff": {
+						"entries": [
+							"Vaal hazak dragonborn's are typically slender and covered in silver scales, which are obscured by the fleshy red veil that covers most of their body.",
+							"Similar to its elder dragon relative, the elder dragonborn vaal hazak, has the ability to transform the effluvium created by the bacteria on its body, into magic."
+						]
+					}
+				},
+				{
+					"name": "Blackveil Vaal Hazak",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"con": 2,
+							"dex": 1
+						}
+					],
+					"page": 37,
+					"entries": [
+						{
+							"name": "Darkvision",
+							"entries": [
+								"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Draconic Resilience",
+							"entries": [
+								"You have advantage on saving throws against disease, and you have resistance against acid damage."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Effluvium Explosion",
+							"entries": [
+								"As an action you create an explosion of spores that fill a 30-foot sphere centered on you for 1 minute, until a wind of moderate or greater speed (at least 10 miles per hour) disperses it, or you use the effluvium spore trait. The sphere spreads around corners, and its area is lightly obscured.",
+								"While you remain in the spores, you know the location of all creatures and objects in the area, creatures or objects in the area can't benefit from being invisible, and you can use an action to cover one creature or object in spores.", 
+								"The spores remain on the creature for the next 24 hours, or until they completely submerge their body and anything they were wearing or carrying (when the spores attached to it) in water for 5 minutes. For the duration, you know the location of the creature or object if you are within 30 feet of it."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Effluvium Spores",
+							"entries": [
+								"Starting at 3rd level, you can use your action to cause the effluvium spores on your body to float in a 5-foot radius around you for 1 minute, or until you end it as a bonus action. Additionally, as a bonus action you can send your spores to a location of your choosing within 30 feet of you.",
+								"The spores fill a 10-foot-squared area that is 5 feet tall and remain in that location until they deal damage to a creature, or your effluvium spore duration ends. At the start of your next turn, a new set of spores floats around you once again.",
+								"When a creature starts its turn in the spore's area or enters it for the first time on a turn, that creature takes 2 (1d4) acid damage. The damage increases to 1d6 at 7th level, 1d8 at 11th, and 1d10 at 16th level. Once you use this trait, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						}
+					],
+					"additionalSpells": [
+						{
+							"innate": {
+								"5": {
+									"daily": {
+										"1": [
+											"bestow curse"
+										]
+									}
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"resist": [
+						"acid"
+					],
+					"traitTags": [
+						"Damage Resistance",
+						"Spellcasting"
+					],
+					"fluff": {
+						"entries": [
+							"Vaal hazak dragonborn's are typically slender and covered in silver scales, which are obscured by the fleshy red veil that covers most of their body.",
+							"Similar to its elder dragon relative, the elder dragonborn vaal hazak, has the ability to transform the effluvium created by the bacteria on its body, into magic."
+						]
+					}
+				},
+				{
+					"name": "Valstrax",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"dex": 2,
+							"con": 1
+						}
+					],
+					"page": 37,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to necrotic damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "The Red Comet",
+							"entries": [
+								"our ability to discharge draconic energy from your hands or wings allows you to move with a burst of speed that resembles a red comet traveling through space.",
+								"When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can't use it again until you move 0 feet on one of your turns."
+							],
+							"type": "entries"
+						},
+						
+						{
+							"name": "Valstrax Lineage",
+							"entries": [
+								"Starting at 3rd level, you can use your action to unleash the draconic energy within yourself, causing your eyes to glow red and two trident-like, wings to sprout from your back.",
+								"Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra fire damage to one target when you deal damage to it with an attack or a spell. The extra fire damage equals your level.",
+								"Once you use this trait, you can't use it again until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Variant Trait~ Ignition",
+							"entries": [
+								"The following trait replaces the The Red Comet. vastrax trait.",
+
+								"Ignition: You can use your action to discharge dragon element energy from your hands in one of the following ways: as a 5 by 30 ft. line, a 15 ft. cone, or in a 5-foot radius around you. When you use your ignition, each creature in the area of the discharge must make a Dexterity saving throw.",
+								"The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 necrotic damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your ignition, you can’t use it again until you complete a short or long rest."
+							],
+							"type": "entries"
+						}
+					],
+					"resist": [
+						"necrotic"
+					],
+					"traitTags": [
+						"Damage Resistance"
+					],
+					"fluff": {
+						"entries": [
+							"Valstrax dragonborn are typically slender and covered in gleaming silver scales with blue eyes. Their backs are lined with fin-like projections."
+						]
+					}
+				},
+				{
+					"name": "Velkhana",
+					"source": "AmellwindsGuidetoMonsterHunting",
+					"ability": [
+						{
+							"cha": 2,
+							"dex": 1
+						}
+					],
+					"page": 37,
+					"entries": [
+						{
+							"name": "Draconic Resistance",
+							"entries": [
+								"You have resistance to cold damage"
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Frost Breath",
+							"entries": [
+								"You know the {@spell ray of frost} cantrip. Charisma is your spellcasting ability for it."
+							],
+							"type": "entries"
+						},
+						
+						{
+							"name": "Glacial Grace",
+							"entries": [
+								"You gain proficiency in the Acrobatics and Persuasion skills."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Ice Armor",
+							"entries": [
+								"You know the {@spell armor of agathys} spell. When you reach 3rd level, you can cast it as a 2nd-level spell. When you reach 5th level you can cast it as a 3rd-level spell. Once you use this trait, you cannot use it again until you finish a long rest."
+							],
+							"type": "entries"
+						},
+						{
+							"name": "Ice Walk",
+							"entries": [
+								"You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost you extra moment."
+							],
+							"type": "entries"
+						}
+					],
+					"skillProficiencies": [
+						{
+							"persuasion": true,
+							"acrobatics": true
+						}
+					],
+					"resist": [
+						"cold"
+					],
+					"traitTags": [
+						"Damage Resistance",
+						"Spellcasting"
+					],
+					"fluff": {
+						"entries": [
+							"Velkhana dragonborn are elegant and slim. Their scales are a unique crystalline blue, and their head has a tiara-like crown of small horns.",
+							"The velkhana dragonborn have the unique ability to summon ice to cover their bodies, providing additional protection.",
+							"They also can use this ice offensively against those who attack them."
 						]
 					}
 				}
